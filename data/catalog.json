@@ -1,0 +1,2047 @@
+{
+ "updated": "2026-09-15",
+ "categories": [
+  {
+   "slug": "spetsodezhda-zimnyaya",
+   "title": "Зимняя спецодежда",
+   "group": "Спецодежда",
+   "desc": "Утеплённые куртки, костюмы и полукомбинезоны с защитой до −40 °C, съёмные утеплители, светоотражающие элементы.",
+   "items": [
+    {
+     "id": "EP-1001",
+     "name": "Куртка мужская зимняя Кур703 ткань Твил, цвет темно-серый с красным",
+     "price": 4050,
+     "priceText": "4 050 ₽",
+     "art": "Кур703 СеКрКрТВ",
+     "stock": 316,
+     "url": "https://205200.ru/product/kurtka_muzhskaya_zimnyaya_kur703_tkan_tvil_tsvet_temno_seryy_s_krasnym/",
+     "img": "assets/products/kurtka_muzhskaya_zimnyaya_kur703_tkan_tvil_tsvet_temno_seryy.jpg"
+    },
+    {
+     "id": "EP-1002",
+     "name": "Брюки мужские зимние Брю706 ткань смесовая, цвет темно-синий",
+     "price": 1881,
+     "priceText": "1 881 ₽",
+     "art": "Брю706СГРС",
+     "stock": 282,
+     "url": "https://205200.ru/product/bryuki_muzhskie_zimnie_bryu706_tkan_smesovaya_tsvet_temno_siniy/",
+     "img": "assets/products/bryuki_muzhskie_zimnie_bryu706_tkan_smesovaya_tsvet_temno_si.jpg"
+    },
+    {
+     "id": "EP-1003",
+     "name": "Куртка мужская зимняя Кур704 ткань Оксфорд, цвет темно-серый с черным",
+     "price": 3410,
+     "priceText": "3 410 ₽",
+     "art": "Кур704СеЧеЧеОКС",
+     "stock": 300,
+     "url": "https://205200.ru/product/kurtka_muzhskaya_zimnyaya_kur704_tkan_oksford_tsvet_temno_seryy_s_chernym/",
+     "img": "assets/products/kurtka_muzhskaya_zimnyaya_kur704_tkan_oksford_tsvet_temno_se.jpg"
+    },
+    {
+     "id": "EP-1004",
+     "name": "Костюм мужской зимний Кос700 (куртка, брюки) ткань Твил, цвет темно-серый, черным с лимонной отделкой, СОП",
+     "price": 6600,
+     "priceText": "6 600 ₽",
+     "art": "Кос700СеЧеЛиТВС",
+     "stock": 142,
+     "url": "https://205200.ru/product/kostyum_muzhskoy_zimniy_kos700_kurtka_bryuki_tkan_tvil_tsvet_temno_seryy_chernym_s_limonnoy_otdelkoy/",
+     "img": "assets/products/kostyum_muzhskoy_zimniy_kos700_kurtka_bryuki_tkan_tvil_tsvet.jpg"
+    },
+    {
+     "id": "EP-1005",
+     "name": "Куртка мужская зимняя Кур710 ткань смесовая, цвет темно-синий с васильковым",
+     "price": 2420,
+     "priceText": "2 420 ₽",
+     "art": "Кур710СиВГРС",
+     "stock": 133,
+     "url": "https://205200.ru/product/kurtka_muzhskaya_zimnyaya_kur710_tkan_smesovaya_tsvet_temno_siniy_s_vasilkovym/",
+     "img": "assets/products/kurtka_muzhskaya_zimnyaya_kur710_tkan_smesovaya_tsvet_temno_.jpg"
+    },
+    {
+     "id": "EP-1006",
+     "name": "Брюки женские утепленные с СОП \"Иртыш\" (т. синий)",
+     "price": 2496,
+     "priceText": "2 496 ₽",
+     "art": "Иртыш БРЮ333",
+     "stock": 38,
+     "url": "https://205200.ru/product/bryuki_zhenskie_uteplennye_s_sop_irtysh_t_siniy_1/",
+     "img": "assets/products/bryuki_zhenskie_uteplennye_s_sop_irtysh_t_siniy_1.jpg"
+    },
+    {
+     "id": "EP-1007",
+     "name": "Куртка \"ЕВРОПА\" дл.,синяя с чёрным (ЧЗ)",
+     "price": 4516,
+     "priceText": "4 516 ₽",
+     "art": "01024",
+     "stock": 39,
+     "url": "https://205200.ru/product/kurtka_evropa_dl_sinyaya_s_chyernym_chz_1/",
+     "img": "assets/products/kurtka_evropa_dl_sinyaya_s_chyernym_chz_1.jpg"
+    },
+    {
+     "id": "EP-1008",
+     "name": "Костюм мужской зимний Кос706 (куртка, брюки) ткань смесовая, цвет темно-синий с васильковым",
+     "price": 4290,
+     "priceText": "4 290 ₽",
+     "art": "Кос706СиВГРС",
+     "stock": 31,
+     "url": "https://205200.ru/product/kostyum_muzhskoy_zimniy_kos706_kurtka_bryuki_tkan_smesovaya_tsvet_temno_siniy_s_vasilkovym/",
+     "img": "assets/products/kostyum_muzhskoy_zimniy_kos706_kurtka_bryuki_tkan_smesovaya_.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-letnyaya",
+   "title": "Летняя спецодежда",
+   "group": "Спецодежда",
+   "desc": "Дышащие костюмы из смесовых тканей с вентиляционными вставками для работ в тёплый период.",
+   "items": [
+    {
+     "id": "EP-1009",
+     "name": "Костюм рабочий мужской №102 (куртка, полукомбинезон) тёмно-синий с васильковым",
+     "price": 1672,
+     "priceText": "1 672 ₽",
+     "art": "№102",
+     "stock": 426,
+     "url": "https://205200.ru/product/kostyum_rabochiy_muzhskoy_102_kurtka_polukombinezon_tyemno_siniy_s_vasilkovym_1/",
+     "img": "assets/products/kostyum_rabochiy_muzhskoy_102_kurtka_polukombinezon_tyemno_s.jpg"
+    },
+    {
+     "id": "EP-1010",
+     "name": "Халат рабочий женский №205 тёмно-синий с васильковым",
+     "price": 792,
+     "priceText": "792 ₽",
+     "art": "№205",
+     "stock": 376,
+     "url": "https://205200.ru/product/khalat_rabochiy_zhenskiy_205_tyemno_siniy_s_vasilkovym_1/",
+     "img": "assets/products/khalat_rabochiy_zhenskiy_205_tyemno_siniy_s_vasilkovym_1.jpg"
+    },
+    {
+     "id": "EP-1011",
+     "name": "Куртка рабочая мужская №116 серый, черный, лимонный",
+     "price": 3050,
+     "priceText": "3 050 ₽",
+     "art": "№116.КрСеЧеЛи",
+     "stock": 258,
+     "url": "https://205200.ru/product/kurtka_rabochaya_muzhskaya_116_seryy_chernyy_limonnyy/",
+     "img": "assets/products/kurtka_rabochaya_muzhskaya_116_seryy_chernyy_limonnyy.jpg"
+    },
+    {
+     "id": "EP-1012",
+     "name": "Костюм рабочий мужской №100 (куртка, брюки) тёмно-синий с васильковым без СОП (ЧЗ)",
+     "price": 990,
+     "priceText": "990 ₽",
+     "art": "№100 без СОП",
+     "stock": 427,
+     "url": "https://205200.ru/product/kostyum_rabochiy_muzhskoy_100_kurtka_bryuki_tyemno_siniy_s_vasilkovym_bez_sop_chz/",
+     "img": "assets/products/kostyum_rabochiy_muzhskoy_100_kurtka_bryuki_tyemno_siniy_s_v.jpg"
+    },
+    {
+     "id": "EP-1013",
+     "name": "Костюм рабочий мужской №112 (куртка, полукомбинезон) тёмно-синий с васильковым (ЧЗ)",
+     "price": 2999,
+     "priceText": "2 999 ₽",
+     "art": "№112",
+     "stock": 314,
+     "url": "https://205200.ru/product/kostyum_rabochiy_muzhskoy_112_kurtka_polukombinezon_tyemno_siniy_s_vasilkovym_chz/",
+     "img": "assets/products/kostyum_rabochiy_muzhskoy_112_kurtka_polukombinezon_tyemno_s.jpg"
+    },
+    {
+     "id": "EP-1014",
+     "name": "Халат рабочий женский №203 отбеленный, ткань ТИСИ",
+     "price": 836,
+     "priceText": "836 ₽",
+     "art": "№203",
+     "stock": 352,
+     "url": "https://205200.ru/product/khalat_rabochiy_zhenskiy_203_otbelennyy_tkan_tisi_1/",
+     "img": "assets/products/khalat_rabochiy_zhenskiy_203_otbelennyy_tkan_tisi_1.jpg"
+    },
+    {
+     "id": "EP-1015",
+     "name": "Полукомбинезон рабочий мужской №116 бежевый, хаки, СОП, ткань Канвас",
+     "price": 2860,
+     "priceText": "2 860 ₽",
+     "art": "№116БеХаСКан",
+     "stock": 223,
+     "url": "https://205200.ru/product/polukombinezon_rabochiy_muzhskoy_116_bezhevyy_khaki_sop_tkan_kanvas_/",
+     "img": "assets/products/polukombinezon_rabochiy_muzhskoy_116_bezhevyy_khaki_sop_tkan.jpg"
+    },
+    {
+     "id": "EP-1016",
+     "name": "Халат рабочий мужской №200 черный, ткань Бязь",
+     "price": 980,
+     "priceText": "980 ₽",
+     "art": "№200 черный",
+     "stock": 221,
+     "url": "https://205200.ru/product/khalat_rabochiy_muzhskoy_200_chernyy_tkan_byaz/",
+     "img": "assets/products/khalat_rabochiy_muzhskoy_200_chernyy_tkan_byaz.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-zashchitnaya",
+   "title": "Защитная одежда",
+   "group": "Спецодежда",
+   "desc": "Одежда для повышенных рисков: термо-, кислото- и нефтестойкие решения с подтверждёнными показателями.",
+   "items": [
+    {
+     "id": "EP-1017",
+     "name": "Жилет сигнальный ТИП 1Э, цвет оранжевый 1-ГО КЛАССА ЗАЩИТЫ 80гр./м2 (КТК) (ЧЗ)",
+     "price": 261,
+     "priceText": "261 ₽",
+     "art": "87469271 (факел)",
+     "stock": 188,
+     "url": "https://205200.ru/product/zhilet_signalnyy_tip_1e_tsvet_oranzhevyy_1_go_klassa_zashchity_80gr_m2_ktk_chz/",
+     "img": "assets/products/zhilet_signalnyy_tip_1e_tsvet_oranzhevyy_1_go_klassa_zashchi.jpg"
+    },
+    {
+     "id": "EP-1018",
+     "name": "Жилет сигнальный ТИП-1, желтый., 2 кл защиты трикотажное полотно с липучкой",
+     "price": 441,
+     "priceText": "441 ₽",
+     "art": "",
+     "stock": 166,
+     "url": "https://205200.ru/product/zhilet_signalnyy_tip_1_zheltyy_2_kl_zashchity_trikotazhnoe_polotno_1/",
+     "img": "assets/products/zhilet_signalnyy_tip_1_zheltyy_2_kl_zashchity_trikotazhnoe_p.jpg"
+    },
+    {
+     "id": "EP-1019",
+     "name": "Жилет сигнальный ТИП 1Э, цвет лимонный 1-ГО КЛАССА ЗАЩИТЫ 80гр./м2 (КТК) (ЧЗ)",
+     "price": 261,
+     "priceText": "261 ₽",
+     "art": "ЖИЛ4103 -ОПТОРИКА",
+     "stock": 165,
+     "url": "https://205200.ru/product/zhilet_signalnyy_tip_1e_tsvet_limonnyy_1_go_klassa_zashchity_80gr_m2_ktk_chz/",
+     "img": "assets/products/zhilet_signalnyy_tip_1e_tsvet_limonnyy_1_go_klassa_zashchity.jpg"
+    },
+    {
+     "id": "EP-1020",
+     "name": "Жилет сигнальный ТИП-1, оранжевый., 2 кл защиты трикотажное полотно (ЧЗ)",
+     "price": 441,
+     "priceText": "441 ₽",
+     "art": "ЖИЛ321-460 -URSUS",
+     "stock": 149,
+     "url": "https://205200.ru/product/zhilet_signalnyy_tip_1_oranzhevyy_2_kl_zashchity_trikotazhnoe_polotno_chz/",
+     "img": "assets/products/zhilet_signalnyy_tip_1_oranzhevyy_2_kl_zashchity_trikotazhno.jpg"
+    },
+    {
+     "id": "EP-1021",
+     "name": "Плащ \"РосМарка\" нейлоновый с ПВХ влагозащитный",
+     "price": 527,
+     "priceText": "527 ₽",
+     "art": "ПН2071",
+     "stock": 114,
+     "url": "https://205200.ru/product/plashch_rosmarka_neylonovyy_s_pvkh_vlagozashchitnyy_1/",
+     "img": "assets/products/plashch_rosmarka_neylonovyy_s_pvkh_vlagozashchitnyy_1.jpg"
+    },
+    {
+     "id": "EP-1022",
+     "name": "Плащ влагозащитный (210 гр./м2) (тип Ливень) зеленый нейлон с ПВХ молния+кнопки Элит-Профи (ЧЗ)",
+     "price": 691,
+     "priceText": "691 ₽",
+     "art": "ПВ31 87469147",
+     "stock": 35,
+     "url": "https://205200.ru/product/plashch_vlagozashchitnyy_210_gr_m2_tip_liven_zelenyy_neylon_s_pvkh_molniya_knopki_elit_profi_chz/",
+     "img": "assets/products/plashch_vlagozashchitnyy_210_gr_m2_tip_liven_zelenyy_neylon_.jpg"
+    },
+    {
+     "id": "EP-1023",
+     "name": "Халат КЩС мужской т.синий (ЧЗ)",
+     "price": 2957,
+     "priceText": "2 957 ₽",
+     "art": "ХАЛ 008 (87479153)",
+     "stock": 35,
+     "url": "https://205200.ru/product/khalat_kshchs_muzhskoy_t_siniy_chz/",
+     "img": "assets/products/khalat_kshchs_muzhskoy_t_siniy_chz.jpg"
+    },
+    {
+     "id": "EP-1024",
+     "name": "Жилет сигнальный SIRIUS кл.2, 2 СОП (трик.120 гр/м2, карманы) оранжевый (ЧЗ)",
+     "price": 312,
+     "priceText": "312 ₽",
+     "art": "136232",
+     "stock": 35,
+     "url": "https://205200.ru/product/zhilet_signalnyy_sirius_kl_2_2_sop_trik_120_gr_m2_karmany_oranzhevyy_chz/",
+     "img": "assets/products/zhilet_signalnyy_sirius_kl_2_2_sop_trik_120_gr_m2_karmany_or.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-meditsina",
+   "title": "Спецодежда для медицины",
+   "group": "Спецодежда",
+   "desc": "Медицинские костюмы, туники и халаты, устойчивые к частой промышленной стирке и дезинфекции.",
+   "items": [
+    {
+     "id": "EP-1025",
+     "name": "Брюки рабочие универсальная №104 белые, ткань ТИСИ",
+     "price": 704,
+     "priceText": "704 ₽",
+     "art": "БР№104 белый",
+     "stock": 288,
+     "url": "https://205200.ru/product/bryuki_rabochie_universalnaya_104_belye_tkan_tisi/",
+     "img": "assets/products/bryuki_rabochie_universalnaya_104_belye_tkan_tisi.jpg"
+    },
+    {
+     "id": "EP-1026",
+     "name": "Брюки рабочие мужские №104 серые, ткань ТИСИ",
+     "price": 704,
+     "priceText": "704 ₽",
+     "art": "№104.БрСер",
+     "stock": 223,
+     "url": "https://205200.ru/product/bryuki_rabochie_muzhskie_104_serye_tkan_tisi/",
+     "img": "assets/products/bryuki_rabochie_muzhskie_104_serye_tkan_tisi.jpg"
+    },
+    {
+     "id": "EP-1027",
+     "name": "Брюки рабочие универсальная №105 белые, ткань Бязь",
+     "price": 660,
+     "priceText": "660 ₽",
+     "art": "№105.БрБелБ",
+     "stock": 211,
+     "url": "https://205200.ru/product/bryuki_rabochie_universalnaya_105_belye_tkan_byaz/",
+     "img": "assets/products/bryuki_rabochie_universalnaya_105_belye_tkan_byaz.jpg"
+    },
+    {
+     "id": "EP-1028",
+     "name": "Костюм рабочий универсальный №104 (куртка, брюки) бордо, ткань смесовая",
+     "price": 1276,
+     "priceText": "1 276 ₽",
+     "art": "№104 бордо",
+     "stock": 226,
+     "url": "https://205200.ru/product/kostyum_rabochiy_universalnyy_104_kurtka_bryuki_bordo_tkan_smesovaya_1/",
+     "img": "assets/products/kostyum_rabochiy_universalnyy_104_kurtka_bryuki_bordo_tkan_s.jpg"
+    },
+    {
+     "id": "EP-1029",
+     "name": "Брюки рабочие универсальная №104 василек, ткань ТИСИ",
+     "price": 704,
+     "priceText": "704 ₽",
+     "art": "БР№104 висилек",
+     "stock": 240,
+     "url": "https://205200.ru/product/bryuki_rabochie_universalnaya_104_vasilek_tkan_tisi/",
+     "img": "assets/products/bryuki_rabochie_universalnaya_104_vasilek_tkan_tisi.jpg"
+    },
+    {
+     "id": "EP-1030",
+     "name": "Халат рабочий мужской №200 отбеленный, ткань Бязь",
+     "price": 1012,
+     "priceText": "1 012 ₽",
+     "art": "№200",
+     "stock": 111,
+     "url": "https://205200.ru/product/khalat_rabochiy_muzhskoy_200_otbelennyy_tkan_byaz_1/",
+     "img": "assets/products/khalat_rabochiy_muzhskoy_200_otbelennyy_tkan_byaz_1.jpg"
+    },
+    {
+     "id": "EP-1031",
+     "name": "Куртка рабочая универсальная №104 (блуза) василек, ткань ТИСИ",
+     "price": 506,
+     "priceText": "506 ₽",
+     "art": "№104",
+     "stock": 74,
+     "url": "https://205200.ru/product/kurtka_rabochaya_universalnaya_104_bluza_vasilek_tkan_tisi/",
+     "img": "assets/products/kurtka_rabochaya_universalnaya_104_bluza_vasilek_tkan_tisi.jpg"
+    },
+    {
+     "id": "EP-1032",
+     "name": "Халат рабочий женский №201 отбеленный, ткань Бязь",
+     "price": 924,
+     "priceText": "924 ₽",
+     "art": "№201",
+     "stock": 47,
+     "url": "https://205200.ru/product/khalat_rabochiy_zhenskiy_201_otbelennyy_tkan_byaz_1/",
+     "img": "assets/products/khalat_rabochiy_zhenskiy_201_otbelennyy_tkan_byaz_1.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-okhranniki",
+   "title": "Одежда для охранников",
+   "group": "Спецодежда",
+   "desc": "Форменные комплекты для служб безопасности и ЧОП: строгий деловой крой и износостойкие ткани.",
+   "items": [
+    {
+     "id": "EP-1033",
+     "name": "Куртка зимняя для Охранника КМФ, город (ЧЗ)",
+     "price": 3030,
+     "priceText": "3 030 ₽",
+     "art": "87469272",
+     "stock": 15,
+     "url": "https://205200.ru/product/kurtka_zimnyaya_dlya_okhrannika_kmf_gorod_chz/",
+     "img": "assets/products/kurtka_zimnyaya_dlya_okhrannika_kmf_gorod_chz.jpg"
+    },
+    {
+     "id": "EP-1034",
+     "name": "Костюм \"Безопасность\" зимний: куртка дл., п/комб. КМФ зелёный",
+     "price": 4643,
+     "priceText": "4 643 ₽",
+     "art": "03958",
+     "stock": 9,
+     "url": "https://205200.ru/product/kostyum_bezopasnost_zimniy_kurtka_dl_p_komb_kmf_zelyenyy/",
+     "img": "assets/products/kostyum_bezopasnost_zimniy_kurtka_dl_p_komb_kmf_zelyenyy.jpg"
+    },
+    {
+     "id": "EP-1035",
+     "name": "Костюм утепленный «ОХРАННИК» КМФ цифра серый (куртка, п/к) Эталон (ЧЗ)",
+     "price": 4023,
+     "priceText": "4 023 ₽",
+     "art": "102904",
+     "stock": 8,
+     "url": "https://205200.ru/product/kostyum_uteplennyy_okhrannik_kmf_tsifra_seryy_kurtka_p_k_etalon_chz/",
+     "img": "assets/products/kostyum_uteplennyy_okhrannik_kmf_tsifra_seryy_kurtka_p_k_eta.jpg"
+    },
+    {
+     "id": "EP-1036",
+     "name": "Костюм \"Вымпел\" (охрана/охранник) : куртка, брюки (тк. смесовая) черный (ЧЗ)",
+     "price": 1976,
+     "priceText": "1 976 ₽",
+     "art": "02301",
+     "stock": 7,
+     "url": "https://205200.ru/product/kostyum_vympel_okhrana_okhrannik_kurtka_bryuki_tk_smesovaya_chernyy_chz/",
+     "img": "assets/products/kostyum_vympel_okhrana_okhrannik_kurtka_bryuki_tk_smesovaya_.jpg"
+    },
+    {
+     "id": "EP-1037",
+     "name": "Костюм Сигур-1 (тк.Смесовая,210) брюки, черный",
+     "price": 3613,
+     "priceText": "3 613 ₽",
+     "art": "87460050",
+     "stock": 5,
+     "url": "https://205200.ru/product/kostyum_sigur_1_tk_smesovaya_210_bryuki_chernyy/",
+     "img": "assets/products/kostyum_sigur_1_tk_smesovaya_210_bryuki_chernyy.jpg"
+    },
+    {
+     "id": "EP-1038",
+     "name": "Костюм \"Безопасность\" (охрана/охранник) зимний: куртка, п/комб. КМФ серый вихрь",
+     "price": 4587,
+     "priceText": "4 587 ₽",
+     "art": "04263",
+     "stock": 4,
+     "url": "https://205200.ru/product/kostyum_bezopasnost_okhrana_okhrannik_zimniy_kurtka_p_komb_kmf_seryy_vikhr/",
+     "img": "assets/products/kostyum_bezopasnost_okhrana_okhrannik_zimniy_kurtka_p_komb_k.jpg"
+    },
+    {
+     "id": "EP-1039",
+     "name": "Костюм \"Блокпост/Вымпел\" куртка, брюки (тк.смесовая) КМФ зеленый (ЧЗ)",
+     "price": 2217,
+     "priceText": "2 217 ₽",
+     "art": "02302",
+     "stock": 3,
+     "url": "https://205200.ru/product/kostyum_blokpost_vympel_kurtka_bryuki_tk_smesovaya_kmf_zelenyy_chz/",
+     "img": "assets/products/kostyum_blokpost_vympel_kurtka_bryuki_tk_smesovaya_kmf_zelen.jpg"
+    },
+    {
+     "id": "EP-1040",
+     "name": "Костюм «ОХРАННИК» летний, куртка/брюки, КМФ цифра серый Эталон (ЧЗ)",
+     "price": 2149,
+     "priceText": "2 149 ₽",
+     "art": "104887 Охранник",
+     "stock": 3,
+     "url": "https://205200.ru/product/kostyum_okhrannik_letniy_kurtka_bryuki_kmf_tsifra_seryy_etalon_chz/",
+     "img": "assets/products/kostyum_okhrannik_letniy_kurtka_bryuki_kmf_tsifra_seryy_etal.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-pishchevaya",
+   "title": "Одежда для пищевых производств",
+   "group": "Спецодежда",
+   "desc": "Костюмы и фартуки, соответствующие требованиям санитарных норм пищевых производств.",
+   "items": [
+    {
+     "id": "EP-1041",
+     "name": "Фартук повара с грудкой (бязь) белый (ЧЗ)",
+     "price": 264,
+     "priceText": "264 ₽",
+     "art": "ФАРБ 103 Кронос (02373, 27005 Сириус)",
+     "stock": 35,
+     "url": "https://205200.ru/product/fartuk_povara_s_grudkoy_byaz_belyy_chz/",
+     "img": "assets/products/fartuk_povara_s_grudkoy_byaz_belyy_chz.jpg"
+    },
+    {
+     "id": "EP-1042",
+     "name": "Костюм рабочий универсальный №105 (куртка, брюки) отбеленный, ткань Бязь длинный рукав",
+     "price": 999,
+     "priceText": "999 ₽",
+     "art": "№105 длин.рукав",
+     "stock": 23,
+     "url": "https://205200.ru/product/kostyum_rabochiy_universalnyy_105_kurtka_bryuki_otbelennyy_tkan_byaz_dlinnyy_rukav_1/",
+     "img": "assets/products/kostyum_rabochiy_universalnyy_105_kurtka_bryuki_otbelennyy_t.jpg"
+    },
+    {
+     "id": "EP-1043",
+     "name": "Фартук повара без грудки (бязь) белый (ЧЗ)",
+     "price": 94,
+     "priceText": "94 ₽",
+     "art": "",
+     "stock": 18,
+     "url": "https://205200.ru/product/fartuk_povara_bez_grudki_byaz_belyy_chz/",
+     "img": "assets/products/fartuk_povara_bez_grudki_byaz_belyy_chz.jpg"
+    },
+    {
+     "id": "EP-1044",
+     "name": "Брюки женские ХАССП-Премиум (тк.Оптима,160), белый",
+     "price": 1163,
+     "priceText": "1 163 ₽",
+     "art": "87481684",
+     "stock": 8,
+     "url": "https://205200.ru/product/bryuki_zhenskie_khassp_premium_tk_optima_160_belyy_1/",
+     "img": "assets/products/bryuki_zhenskie_khassp_premium_tk_optima_160_belyy_1.jpg"
+    },
+    {
+     "id": "EP-1045",
+     "name": "Костюм женский ХАССП-Стандарт (ткань Оптима, 160), белый",
+     "price": 1938,
+     "priceText": "1 938 ₽",
+     "art": "87473484",
+     "stock": 8,
+     "url": "https://205200.ru/product/kostyum_zhenskiy_khassp_standart_tkan_optima_160_belyy/",
+     "img": "assets/products/kostyum_zhenskiy_khassp_standart_tkan_optima_160_belyy.jpg"
+    },
+    {
+     "id": "EP-1046",
+     "name": "Костюм \"СИЦИЛИЯ\" мужской: куртка, брюки, белый (ЧЗ)",
+     "price": 1944,
+     "priceText": "1 944 ₽",
+     "art": "118800",
+     "stock": 7,
+     "url": "https://205200.ru/product/kostyum_sitsiliya_muzhskoy_kurtka_bryuki_belyy_chz/",
+     "img": "assets/products/kostyum_sitsiliya_muzhskoy_kurtka_bryuki_belyy_chz.jpg"
+    },
+    {
+     "id": "EP-1047",
+     "name": "Костюм пекаря (тк.Бязь,145), белый (ЧЗ)",
+     "price": 1318,
+     "priceText": "1 318 ₽",
+     "art": "87462839",
+     "stock": 7,
+     "url": "https://205200.ru/product/kostyum_pekarya_tk_byaz_145_belyy_chz/",
+     "img": "assets/products/kostyum_pekarya_tk_byaz_145_belyy_chz.jpg"
+    },
+    {
+     "id": "EP-1048",
+     "name": "Костюм женский Хаспфуд-База (тк.ТиСи,120), серый",
+     "price": 1796,
+     "priceText": "1 796 ₽",
+     "art": "87492490",
+     "stock": 5,
+     "url": "https://205200.ru/product/kostyum_zhenskiy_khaspfud_baza_tk_tisi_120_seryy/",
+     "img": "assets/products/kostyum_zhenskiy_khaspfud_baza_tk_tisi_120_seryy.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-sfera-uslug",
+   "title": "Спецодежда для сферы услуг",
+   "group": "Спецодежда",
+   "desc": "Клининг, HoReCa, сервис: практичные комплекты с аккуратным внешним видом и стойкими тканями.",
+   "items": [
+    {
+     "id": "EP-1049",
+     "name": "Халат \"Марлен-2\" женский бордовый с полоской (ЧЗ)",
+     "price": 1454,
+     "priceText": "1 454 ₽",
+     "art": "07892",
+     "stock": 20,
+     "url": "https://205200.ru/product/khalat_marlen_2_zhenskiy_bordovyy_s_poloskoy_chz/",
+     "img": "assets/products/khalat_marlen_2_zhenskiy_bordovyy_s_poloskoy_chz.jpg"
+    },
+    {
+     "id": "EP-1050",
+     "name": "Халат \"Марлен\" женский морская волна с голубым (ЧЗ)",
+     "price": 1332,
+     "priceText": "1 332 ₽",
+     "art": "08240",
+     "stock": 14,
+     "url": "https://205200.ru/product/khalat_marlen_zhenskiy_morskaya_volna_s_golubym_chz/",
+     "img": "assets/products/khalat_marlen_zhenskiy_morskaya_volna_s_golubym_chz.jpg"
+    },
+    {
+     "id": "EP-1051",
+     "name": "Костюм \"ВИКТОРИЯ\" женский: блуза, брюки, голубой (ЧЗ)",
+     "price": 1760,
+     "priceText": "1 760 ₽",
+     "art": "135969",
+     "stock": 9,
+     "url": "https://205200.ru/product/kostyum_viktoriya_zhenskiy_bluza_bryuki_goluboy_chz/",
+     "img": "assets/products/kostyum_viktoriya_zhenskiy_bluza_bryuki_goluboy_chz.jpg"
+    },
+    {
+     "id": "EP-1052",
+     "name": "Костюм женский Магнэль® (тк.Смесовая,120), морская волна",
+     "price": 2634,
+     "priceText": "2 634 ₽",
+     "art": "50751000",
+     "stock": 7,
+     "url": "https://205200.ru/product/kostyum_zhenskiy_magnel_tk_smesovaya_120_morskaya_volna/",
+     "img": "assets/products/kostyum_zhenskiy_magnel_tk_smesovaya_120_morskaya_volna.jpg"
+    },
+    {
+     "id": "EP-1053",
+     "name": "Костюм \"ЛИРА\" женский: блуза, брюки темно-синий (ЧЗ)",
+     "price": 2219,
+     "priceText": "2 219 ₽",
+     "art": "126644",
+     "stock": 6,
+     "url": "https://205200.ru/product/kostyum_lira_zhenskiy_bluza_bryuki_temno_siniy_chz/",
+     "img": "assets/products/kostyum_lira_zhenskiy_bluza_bryuki_temno_siniy_chz.jpg"
+    },
+    {
+     "id": "EP-1054",
+     "name": "Костюм женский Магнэль (тк.Смесовая,120), т.синий",
+     "price": 2634,
+     "priceText": "2 634 ₽",
+     "art": "87477092",
+     "stock": 4,
+     "url": "https://205200.ru/product/kostyum_zhenskiy_magnel_tk_smesovaya_120_t_siniy/",
+     "img": "assets/products/kostyum_zhenskiy_magnel_tk_smesovaya_120_t_siniy.jpg"
+    },
+    {
+     "id": "EP-1055",
+     "name": "Костюм \"ВИКТОР\" мужской: куртка, брюки, тёмно-синий (ЧЗ)",
+     "price": 1913,
+     "priceText": "1 913 ₽",
+     "art": "111201",
+     "stock": 5,
+     "url": "https://205200.ru/product/kostyum_viktor_muzhskoy_kurtka_bryuki_tyemno_siniy_chz/",
+     "img": "assets/products/kostyum_viktor_muzhskoy_kurtka_bryuki_tyemno_siniy_chz.jpg"
+    },
+    {
+     "id": "EP-1056",
+     "name": "Костюм \"ФЛОРА\" женский: куртка, брюки темно-синий",
+     "price": 2295,
+     "priceText": "2 295 ₽",
+     "art": "151965",
+     "stock": 2,
+     "url": "https://205200.ru/product/kostyum_flora_zhenskiy_kurtka_bryuki_temno_siniy/",
+     "img": "assets/products/kostyum_flora_zhenskiy_kurtka_bryuki_temno_siniy.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsodezhda-rybalka-okhota",
+   "title": "Одежда для рыбалки, охоты, туризма",
+   "group": "Спецодежда",
+   "desc": "Мембранные и влагозащитные костюмы для работы и отдыха на открытом воздухе.",
+   "items": [
+    {
+     "id": "EP-1057",
+     "name": "Костюм \"ВЕПРЬ\" куртка/брюки, цвет: т.серый, ткань: Софтшелл",
+     "price": 7640,
+     "priceText": "7 640 ₽",
+     "art": "КОС619-Т.СЕРЫЙ",
+     "stock": 0,
+     "url": "https://205200.ru/product/kostyum_vepr_kurtka_bryuki_tsvet_t_seryy_tkan_softshell/",
+     "img": "assets/products/kostyum_vepr_kurtka_bryuki_tsvet_t_seryy_tkan_softshell.jpg"
+    },
+    {
+     "id": "EP-1058",
+     "name": "Костюм летний мужской Горка 5, МХ/РГ WR",
+     "price": 4184,
+     "priceText": "4 184 ₽",
+     "art": "",
+     "stock": 8,
+     "url": "https://205200.ru/product/kostyum_letniy_muzhskoy_gorka_5_mkh_rg_1/",
+     "img": "assets/products/kostyum_letniy_muzhskoy_gorka_5_mkh_rg_1.jpg"
+    },
+    {
+     "id": "EP-1059",
+     "name": "Костюм \"Стелс\": куртка дл., брюки КМФ \"Клякса\" (ЧЗ)",
+     "price": 1224,
+     "priceText": "1 224 ₽",
+     "art": "08771",
+     "stock": 4,
+     "url": "https://205200.ru/product/kostyum_stels_kurtka_dl_bryuki_kmf_klyaksa_chz/",
+     "img": "assets/products/kostyum_stels_kurtka_dl_bryuki_kmf_klyaksa_chz.jpg"
+    },
+    {
+     "id": "EP-1060",
+     "name": "Костюм \"ТУРИСТ 2\" куртка/брюки цвет: кмф \"Мультикам\", ткань: Твил Пич",
+     "price": 3110,
+     "priceText": "3 110 ₽",
+     "art": "КОС668-МУЛЬТИКАМ",
+     "stock": 4,
+     "url": "https://205200.ru/product/kostyum_turist_2_kurtka_bryuki_tsvet_kmf_multikam_tkan_tvil_pich/",
+     "img": "assets/products/kostyum_turist_2_kurtka_bryuki_tsvet_kmf_multikam_tkan_tvil_.jpg"
+    },
+    {
+     "id": "EP-1061",
+     "name": "Костюм \"РЫСЬ\": куртка, брюки (тк. Рип-стоп) КМФ \"Пустыня\"",
+     "price": 2414,
+     "priceText": "2 414 ₽",
+     "art": "00553",
+     "stock": 3,
+     "url": "https://205200.ru/product/kostyum_rys_kurtka_bryuki_tk_rip_stop_kmf_pustynya_1/",
+     "img": "assets/products/kostyum_rys_kurtka_bryuki_tk_rip_stop_kmf_pustynya_1.jpg"
+    },
+    {
+     "id": "EP-1062",
+     "name": "Костюм демисезонный \"СУМРАК-ВЕСНА/ОСЕНЬ\" куртка/брюки цвет: хаки, ткань Твил Рип-Стоп (ЧЗ)",
+     "price": 5590,
+     "priceText": "5 590 ₽",
+     "art": "КОС571-ХАКИ",
+     "stock": 2,
+     "url": "https://205200.ru/product/kostyum_demisezonnyy_sumrak_vesna_osen_kurtka_bryuki_tsvet_khaki_tkan_tvil_rip_stop_chz/",
+     "img": "assets/products/kostyum_demisezonnyy_sumrak_vesna_osen_kurtka_bryuki_tsvet_k.jpg"
+    },
+    {
+     "id": "EP-1063",
+     "name": "Куртка демисезонная \"КОНТРОЛ-ВЕСНА/ОСЕНЬ\" цвет: кмф \"МУЛЬТИКАМ\", ткань: РИП-СТОП",
+     "price": 4675,
+     "priceText": "4 675 ₽",
+     "art": "КУР677-МУЛЬТИКАМ",
+     "stock": 2,
+     "url": "https://205200.ru/product/kurtka_demisezonnaya_kontrol_vesna_osen_tsvet_kmf_multikam_tkan_rip_stop/",
+     "img": "assets/products/kurtka_demisezonnaya_kontrol_vesna_osen_tsvet_kmf_multikam_t.jpg"
+    },
+    {
+     "id": "EP-1064",
+     "name": "Куртка флисовая \"Меркурий\" темно-синяя (ЧЗ)",
+     "price": 1615,
+     "priceText": "1 615 ₽",
+     "art": "04393",
+     "stock": 2,
+     "url": "https://205200.ru/product/kurtka_flisovaya_merkuriy_temno_sinyaya_chz/",
+     "img": "assets/products/kurtka_flisovaya_merkuriy_temno_sinyaya_chz.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "golovnye-ubory",
+   "title": "Головные уборы",
+   "group": "Спецодежда",
+   "desc": "Кепки, шапки, подшлемники, колпаки и балаклавы для всех сезонов.",
+   "items": [
+    {
+     "id": "EP-1065",
+     "name": "Колпак медицинский (бязь) белый",
+     "price": 68,
+     "priceText": "68 ₽",
+     "art": "",
+     "stock": 2058,
+     "url": "https://205200.ru/product/kolpak_meditsinskiy_byaz_belyy/",
+     "img": "assets/products/kolpak_meditsinskiy_byaz_belyy.jpg"
+    },
+    {
+     "id": "EP-1066",
+     "name": "Колпак медицинский (смесовая) белый",
+     "price": 92,
+     "priceText": "92 ₽",
+     "art": "",
+     "stock": 1232,
+     "url": "https://205200.ru/product/kolpak_meditsinskiy_smesovaya_belyy/",
+     "img": "assets/products/kolpak_meditsinskiy_smesovaya_belyy.jpg"
+    },
+    {
+     "id": "EP-1067",
+     "name": "Бейсболки полувелюр (Т.синяя)",
+     "price": 225,
+     "priceText": "225 ₽",
+     "art": "",
+     "stock": 600,
+     "url": "https://205200.ru/product/beysbolki_poluvelyur_t_sinyaya/",
+     "img": "assets/products/beysbolki_poluvelyur_t_sinyaya.jpg"
+    },
+    {
+     "id": "EP-1068",
+     "name": "Колпак медицинский (смесовая) голубой",
+     "price": 82,
+     "priceText": "82 ₽",
+     "art": "",
+     "stock": 518,
+     "url": "https://205200.ru/product/kolpak_meditsinskiy_smesovaya_goluboy/",
+     "img": "assets/products/kolpak_meditsinskiy_smesovaya_goluboy.jpg"
+    },
+    {
+     "id": "EP-1069",
+     "name": "Шапка трикотажная без флиса черная",
+     "price": 255,
+     "priceText": "255 ₽",
+     "art": "",
+     "stock": 476,
+     "url": "https://205200.ru/product/shapka_trikotazhnaya_bez_flisa_chernaya/",
+     "img": "assets/products/shapka_trikotazhnaya_bez_flisa_chernaya.jpg"
+    },
+    {
+     "id": "EP-1070",
+     "name": "Бейсболка Факел, т.синий",
+     "price": 376,
+     "priceText": "376 ₽",
+     "art": "87498236",
+     "stock": 356,
+     "url": "https://205200.ru/product/beysbolka_fakel_t_siniy/",
+     "img": "assets/products/beysbolka_fakel_t_siniy.jpg"
+    },
+    {
+     "id": "EP-1071",
+     "name": "Колпак медицинский (смесовая) бордо",
+     "price": 82,
+     "priceText": "82 ₽",
+     "art": "",
+     "stock": 284,
+     "url": "https://205200.ru/product/kolpak_meditsinskiy_smesovaya_bordo/",
+     "img": "assets/products/kolpak_meditsinskiy_smesovaya_bordo.jpg"
+    },
+    {
+     "id": "EP-1072",
+     "name": "Шапка трикотажная с тинсулейтом черная",
+     "price": 298,
+     "priceText": "298 ₽",
+     "art": "",
+     "stock": 226,
+     "url": "https://205200.ru/product/shapka_trikotazhnaya_s_tinsuleytom_chernaya/",
+     "img": "assets/products/shapka_trikotazhnaya_s_tinsuleytom_chernaya.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "trikotazh",
+   "title": "Трикотажные изделия",
+   "group": "Спецодежда",
+   "desc": "Футболки, поло, джемперы и термобельё с нанесением логотипа компании.",
+   "items": [
+    {
+     "id": "EP-1073",
+     "name": "Футболки трикотажные (состав: 100% х/б);плотность 160 гр/м² (Т.СЕРАЯ)",
+     "price": 353,
+     "priceText": "353 ₽",
+     "art": "MIOLAR TEXTILE (Цекор)",
+     "stock": 189,
+     "url": "https://205200.ru/product/futbolki_trikotazhnye_sostav_100_kh_b_plotnost_160_gr_m_t_seraya/",
+     "img": "assets/products/futbolki_trikotazhnye_sostav_100_kh_b_plotnost_160_gr_m_t_se.jpg"
+    },
+    {
+     "id": "EP-1074",
+     "name": "Футболки МУЖСКИЕ трикотажные (состав: 100% х/б); плотность 180 гр/м² (Т.Синий)",
+     "price": 417,
+     "priceText": "417 ₽",
+     "art": "",
+     "stock": 56,
+     "url": "https://205200.ru/product/futbolki_muzhskie_trikotazhnye_sostav_100_kh_b_plotnost_180_gr_m_t_siniy_1/",
+     "img": "assets/products/futbolki_muzhskie_trikotazhnye_sostav_100_kh_b_plotnost_180_.jpg"
+    },
+    {
+     "id": "EP-1075",
+     "name": "Носки 100% х/б (ЧЗ)",
+     "price": 99,
+     "priceText": "99 ₽",
+     "art": "арт. Д-5 (50712 Сириус)",
+     "stock": 58,
+     "url": "https://205200.ru/product/noski_100_kh_b_chz/",
+     "img": "assets/products/noski_100_kh_b_chz.jpg"
+    },
+    {
+     "id": "EP-1076",
+     "name": "Футболка длинные рукава темно-синяя 160г/м2",
+     "price": 561,
+     "priceText": "561 ₽",
+     "art": "М-63 (04021 Сириус)",
+     "stock": 19,
+     "url": "https://205200.ru/product/futbolka_dlinnye_rukava_temno_sinyaya_160g_m2/",
+     "img": "assets/products/futbolka_dlinnye_rukava_temno_sinyaya_160g_m2.jpg"
+    },
+    {
+     "id": "EP-1077",
+     "name": "Толстовка-футер дл. рукава васильковая , рукав с манжетом, пл.240 г/кв.м (ЧЗ)",
+     "price": 1411,
+     "priceText": "1 411 ₽",
+     "art": "116570 (М-16 КАМТЕКС групп)",
+     "stock": 17,
+     "url": "https://205200.ru/product/tolstovka_futer_dl_rukava_vasilkovaya_rukav_s_manzhetom_pl_240_g_kv_m_chz/",
+     "img": "assets/products/tolstovka_futer_dl_rukava_vasilkovaya_rukav_s_manzhetom_pl_2.jpg"
+    },
+    {
+     "id": "EP-1078",
+     "name": "Рубашка-поло короткие рукава красная, рукав с манжетом, пл.180 г/кв.м. (ЧЗ)",
+     "price": 1269,
+     "priceText": "1 269 ₽",
+     "art": "113587",
+     "stock": 8,
+     "url": "https://205200.ru/product/rubashka_polo_korotkie_rukava_krasnaya_rukav_s_manzhetom_pl_180_g_kv_m_chz/",
+     "img": "assets/products/rubashka_polo_korotkie_rukava_krasnaya_rukav_s_manzhetom_pl_.jpg"
+    },
+    {
+     "id": "EP-1079",
+     "name": "Свитер РЫБАК (ЧЗ)",
+     "price": 1051,
+     "priceText": "1 051 ₽",
+     "art": "02383 (факел 87469002)",
+     "stock": 7,
+     "url": "https://205200.ru/product/sviter_rybak_chz/",
+     "img": "assets/products/sviter_rybak_chz.jpg"
+    },
+    {
+     "id": "EP-1080",
+     "name": "Носки 100% х/б",
+     "price": 50,
+     "priceText": "50 ₽",
+     "art": "",
+     "stock": 7,
+     "url": "https://205200.ru/product/noski_100_kh_b/",
+     "img": "assets/products/noski_100_kh_b.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsobuv-zimnyaya",
+   "title": "Спецобувь зимняя",
+   "group": "Спецобувь",
+   "desc": "Утеплённые сапоги и ботинки с защитой от −30 °C, ПУ/ТПУ-подошва и металлический подносок.",
+   "items": [
+    {
+     "id": "EP-1081",
+     "name": "Сапоги \"Полярник\" мод. 10/25-1Д, черные Красная Звезда",
+     "price": 3961,
+     "priceText": "3 961 ₽",
+     "art": "10/25-1Д",
+     "stock": 32,
+     "url": "https://205200.ru/product/sapogi_polyarnik_mod_10_25_1d_chernye_krasnaya_zvezda/",
+     "img": "assets/products/sapogi_polyarnik_mod_10_25_1d_chernye_krasnaya_zvezda.jpg"
+    },
+    {
+     "id": "EP-1082",
+     "name": "Сапоги женские из ЭВА (осень/зима -20С) С-062 серые",
+     "price": 1666,
+     "priceText": "1 666 ₽",
+     "art": "С-062 серые",
+     "stock": 27,
+     "url": "https://205200.ru/product/sapogi_zhenskie_iz_eva_osen_zima_20s_s_062_serye/",
+     "img": "assets/products/sapogi_zhenskie_iz_eva_osen_zima_20s_s_062_serye.jpg"
+    },
+    {
+     "id": "EP-1083",
+     "name": "Сапоги \"Профи-Зима\", МП, иск. мех, ПУ-ТПУ",
+     "price": 2782,
+     "priceText": "2 782 ₽",
+     "art": "03915 (125537)",
+     "stock": 24,
+     "url": "https://205200.ru/product/sapogi_profi_zima_mp_isk_mekh_pu_tpu/",
+     "img": "assets/products/sapogi_profi_zima_mp_isk_mekh_pu_tpu.jpg"
+    },
+    {
+     "id": "EP-1084",
+     "name": "Сапоги кожаные комбинированные утепленные мод. 15-0М ПУ, иск. мех",
+     "price": 2533,
+     "priceText": "2 533 ₽",
+     "art": "15-0М",
+     "stock": 24,
+     "url": "https://205200.ru/product/sapogi_kozhanye_kombinirovannye_uteplennye_mod_15_0m_pu_isk_mekh/",
+     "img": "assets/products/sapogi_kozhanye_kombinirovannye_uteplennye_mod_15_0m_pu_isk_.jpg"
+    },
+    {
+     "id": "EP-1085",
+     "name": "Сапоги кожаные утепленные мод. 16/1М МП ПУ-ПУ, иск. мех",
+     "price": 3020,
+     "priceText": "3 020 ₽",
+     "art": "16/1М",
+     "stock": 21,
+     "url": "https://205200.ru/product/sapogi_kozhanye_uteplennye_mod_16_1m_mp_pu_pu_isk_mekh/",
+     "img": "assets/products/sapogi_kozhanye_uteplennye_mod_16_1m_mp_pu_pu_isk_mekh.jpg"
+    },
+    {
+     "id": "EP-1086",
+     "name": "Ботинки \"Protection-nord/ю\", кожа, ПКП, нат. мех, ПУ-ТПУ",
+     "price": 4220,
+     "priceText": "4 220 ₽",
+     "art": "116683",
+     "stock": 23,
+     "url": "https://205200.ru/product/botinki_protection_nord_yu_kozha_pkp_nat_mekh_pu_tpu/",
+     "img": "assets/products/botinki_protection_nord_yu_kozha_pkp_nat_mekh_pu_tpu.jpg"
+    },
+    {
+     "id": "EP-1087",
+     "name": "Ботинки \"Профи-Зима/к\", иск. мех, ПУ-ТПУ",
+     "price": 1500,
+     "priceText": "1 500 ₽",
+     "art": "128866",
+     "stock": 8,
+     "url": "https://205200.ru/product/botinki_profi_zima_k_isk_mekh_pu_tpu/",
+     "img": "assets/products/botinki_profi_zima_k_isk_mekh_pu_tpu.jpg"
+    },
+    {
+     "id": "EP-1088",
+     "name": "Сапоги \"ПОЛЯРНИК\", ТЭП КП",
+     "price": 3485,
+     "priceText": "3 485 ₽",
+     "art": "9-12",
+     "stock": 18,
+     "url": "https://205200.ru/product/sapogi_polyarnik_tep_kp_/",
+     "img": "assets/products/sapogi_polyarnik_tep_kp_.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsobuv-letnyaya",
+   "title": "Спецобувь летняя",
+   "group": "Спецобувь",
+   "desc": "Лёгкие ботинки, полуботинки и сандалии с антистатичной подошвой.",
+   "items": [
+    {
+     "id": "EP-1089",
+     "name": "Полуботинки кожаные мод. 23 ПУ МП",
+     "price": 1785,
+     "priceText": "1 785 ₽",
+     "art": "23",
+     "stock": 30,
+     "url": "https://205200.ru/product/polubotinki_kozhanye_mod_23_pu_mp/",
+     "img": "assets/products/polubotinki_kozhanye_mod_23_pu_mp.jpg"
+    },
+    {
+     "id": "EP-1090",
+     "name": "Сандалии кожаные мод. 21 ПУ с металлоподноском",
+     "price": 2006,
+     "priceText": "2 006 ₽",
+     "art": "21",
+     "stock": 24,
+     "url": "https://205200.ru/product/sandalii_kozhanye_mod_21_pu_s_metallopodnoskom/",
+     "img": "assets/products/sandalii_kozhanye_mod_21_pu_s_metallopodnoskom.jpg"
+    },
+    {
+     "id": "EP-1091",
+     "name": "Полуботинки кожаные мужские мод. 23/1 ПУ-ПУ МП",
+     "price": 2006,
+     "priceText": "2 006 ₽",
+     "art": "23/1",
+     "stock": 18,
+     "url": "https://205200.ru/product/polubotinki_kozhanye_muzhskie_mod_23_1_pu_pu_mp/",
+     "img": "assets/products/polubotinki_kozhanye_muzhskie_mod_23_1_pu_pu_mp.jpg"
+    },
+    {
+     "id": "EP-1092",
+     "name": "Сапоги кожаные мод. 16/1 МП ПУ-ПУ",
+     "price": 2890,
+     "priceText": "2 890 ₽",
+     "art": "16/1",
+     "stock": 24,
+     "url": "https://205200.ru/product/sapogi_kozhanye_mod_16_1_mp_pu_pu/",
+     "img": "assets/products/sapogi_kozhanye_mod_16_1_mp_pu_pu.jpg"
+    },
+    {
+     "id": "EP-1093",
+     "name": "Полуботинки \"Профи/к\", ПУ-ТПУ",
+     "price": 1581,
+     "priceText": "1 581 ₽",
+     "art": "130774",
+     "stock": 21,
+     "url": "https://205200.ru/product/polubotinki_profi_k_pu_tpu/",
+     "img": "assets/products/polubotinki_profi_k_pu_tpu.jpg"
+    },
+    {
+     "id": "EP-1094",
+     "name": "Ботинки кожаные мод. 13/1 ПУ-ПУ",
+     "price": 2023,
+     "priceText": "2 023 ₽",
+     "art": "13/1",
+     "stock": 21,
+     "url": "https://205200.ru/product/botinki_kozhanye_mod_13_1_pu_pu_/",
+     "img": "assets/products/botinki_kozhanye_mod_13_1_pu_pu_.jpg"
+    },
+    {
+     "id": "EP-1095",
+     "name": "Полуботинки \"Профи/к\", МП МС, ПУ-ТПУ",
+     "price": 1828,
+     "priceText": "1 828 ₽",
+     "art": "130791",
+     "stock": 19,
+     "url": "https://205200.ru/product/polubotinki_profi_k_mp_ms_pu_tpu/",
+     "img": "assets/products/polubotinki_profi_k_mp_ms_pu_tpu.jpg"
+    },
+    {
+     "id": "EP-1096",
+     "name": "Сапоги кожаные комбинированные мод. 15-0И ПУ",
+     "price": 2447,
+     "priceText": "2 447 ₽",
+     "art": "15-0И",
+     "stock": 20,
+     "url": "https://205200.ru/product/sapogi_kozhanye_kombinirovannye_mod_15_0i_pu/",
+     "img": "assets/products/sapogi_kozhanye_kombinirovannye_mod_15_0i_pu.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsobuv-meditsinskaya",
+   "title": "Спецобувь медицинская и повседневная",
+   "group": "Спецобувь",
+   "desc": "Сабо и туфли для медицинских и сервисных служб: моющиеся материалы, антискользящая подошва.",
+   "items": [
+    {
+     "id": "EP-1097",
+     "name": "Сабо из ЭВА, артикул С-01, белый, с перфорацией БАРС",
+     "price": 636,
+     "priceText": "636 ₽",
+     "art": "С-01 белый",
+     "stock": 28,
+     "url": "https://205200.ru/product/sabo_iz_eva_artikul_s_01_belyy_s_perforatsiey_bars/",
+     "img": "assets/products/sabo_iz_eva_artikul_s_01_belyy_s_perforatsiey_bars.jpg"
+    },
+    {
+     "id": "EP-1098",
+     "name": "Тапочки (туфли) закрытые вельветовые на резинке (арт. 1-21-1) Step",
+     "price": 765,
+     "priceText": "765 ₽",
+     "art": "1-21-1 (Сириус 06342)",
+     "stock": 28,
+     "url": "https://205200.ru/product/tapochki_tufli_zakrytye_velvetovye_na_rezinke_art_1_21_1_step/",
+     "img": "assets/products/tapochki_tufli_zakrytye_velvetovye_na_rezinke_art_1_21_1_ste.jpg"
+    },
+    {
+     "id": "EP-1099",
+     "name": "Тапочки (туфли) закрытые иск. кожа (арт. 1-21-2) Step",
+     "price": 798,
+     "priceText": "798 ₽",
+     "art": "1-21-2 (Сириус 133052)",
+     "stock": 25,
+     "url": "https://205200.ru/product/tapochki_tufli_zakrytye_isk_kozha_art_1_21_2_step/",
+     "img": "assets/products/tapochki_tufli_zakrytye_isk_kozha_art_1_21_2_step.jpg"
+    },
+    {
+     "id": "EP-1100",
+     "name": "Туфли женские перфорация, белые (искус. кожа, ПВХ) девичьи М11Пб/д Атлантис",
+     "price": 697,
+     "priceText": "697 ₽",
+     "art": "М11Пб/д",
+     "stock": 23,
+     "url": "https://205200.ru/product/tufli_zhenskie_perforatsiya_belye_iskus_kozha_pvkh_devichi_m11pb_d_atlantis/",
+     "img": "assets/products/tufli_zhenskie_perforatsiya_belye_iskus_kozha_pvkh_devichi_m.jpg"
+    },
+    {
+     "id": "EP-1101",
+     "name": "Тапочки-туфли рабочие (искусственная кожа, ПВХ) девичьи М11ИК/д Атлантис",
+     "price": 636,
+     "priceText": "636 ₽",
+     "art": "М11ИК/д",
+     "stock": 21,
+     "url": "https://205200.ru/product/tapochki_tufli_rabochie_iskusstvennaya_kozha_pvkh_devichi_m11ik_d_atlantis/",
+     "img": "assets/products/tapochki_tufli_rabochie_iskusstvennaya_kozha_pvkh_devichi_m1.jpg"
+    },
+    {
+     "id": "EP-1102",
+     "name": "КРОССОВКИ мод. 8731/1-3, текстиль, ПУ/ПУ, КП",
+     "price": 2754,
+     "priceText": "2 754 ₽",
+     "art": "8731/1-3",
+     "stock": 14,
+     "url": "https://205200.ru/product/krossovki_mod_8731_1_3_tekstil_pu_pu_kp/",
+     "img": "assets/products/krossovki_mod_8731_1_3_tekstil_pu_pu_kp.jpg"
+    },
+    {
+     "id": "EP-1103",
+     "name": "Сабо с перфорацией женские ЭВА, белый, с ремешком МОДЕЛЬ №3 Step",
+     "price": 951,
+     "priceText": "951 ₽",
+     "art": "87477366",
+     "stock": 14,
+     "url": "https://205200.ru/product/sabo_s_perforatsiey_zhenskie_eva_belyy_s_remeshkom_model_3_step/",
+     "img": "assets/products/sabo_s_perforatsiey_zhenskie_eva_belyy_s_remeshkom_model_3_s.jpg"
+    },
+    {
+     "id": "EP-1104",
+     "name": "Сабо белые женские \"Ола\" с перфорацией, с ремешком, ЭВА Жанетт",
+     "price": 762,
+     "priceText": "762 ₽",
+     "art": "",
+     "stock": 13,
+     "url": "https://205200.ru/product/sabo_belye_zhenskie_ola_s_perforatsiey_s_remeshkom_eva_zhanett/",
+     "img": "assets/products/sabo_belye_zhenskie_ola_s_perforatsiey_s_remeshkom_eva_zhane.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsobuv-termo",
+   "title": "Спецобувь термостойкая",
+   "group": "Спецобувь",
+   "desc": "Защита от рисков электрической дуги и высоких температур, диэлектрические свойства.",
+   "items": [
+    {
+     "id": "EP-1105",
+     "name": "Ботинки ФУЛГАРД 2 КпПЭКЩ",
+     "price": 4556,
+     "priceText": "4 556 ₽",
+     "art": "1-1102902(У,И)",
+     "stock": 23,
+     "url": "https://205200.ru/product/botinki_fulgard_2_kppekshch/",
+     "img": "assets/products/botinki_fulgard_2_kppekshch.jpg"
+    },
+    {
+     "id": "EP-1106",
+     "name": "Ботинки \"Сварщик\" юфть м/подн (Яхтинг)",
+     "price": 4376,
+     "priceText": "4 376 ₽",
+     "art": "2-321",
+     "stock": 4,
+     "url": "https://205200.ru/product/botinki_svarshchik_yuft_m_podn_yakhting/",
+     "img": "assets/products/botinki_svarshchik_yuft_m_podn_yakhting.jpg"
+    },
+    {
+     "id": "EP-1107",
+     "name": "Ботинки \"Сварщик\" юфть п/п (Яхтинг)",
+     "price": 4490,
+     "priceText": "4 490 ₽",
+     "art": "2-322 СВ",
+     "stock": 3,
+     "url": "https://205200.ru/product/botinki_svarshchik_yuft_p_p_yakhting/",
+     "img": "assets/products/botinki_svarshchik_yuft_p_p_yakhting.jpg"
+    },
+    {
+     "id": "EP-1108",
+     "name": "Ботинки кожаные сварщика мод. 24 ПУ-НИТРИЛ металлоподносок",
+     "price": 3195,
+     "priceText": "3 195 ₽",
+     "art": "24",
+     "stock": 3,
+     "url": "https://205200.ru/product/botinki_kozhanye_svarshchika_mod_24_pu_nitril_metallopodnosok/",
+     "img": "assets/products/botinki_kozhanye_svarshchika_mod_24_pu_nitril_metallopodnoso.jpg"
+    },
+    {
+     "id": "EP-1109",
+     "name": "Ботинки СВАРЩИКА утепленные \"PERFECT PROTECTION\" PRB15-CSW ПУ-Нитрил с ПП и АС",
+     "price": 5728,
+     "priceText": "5 728 ₽",
+     "art": "PRB15-CSW 120905",
+     "stock": 0,
+     "url": "https://205200.ru/product/botinki_svarshchika_uteplennye_perfect_protection_prb15_csw_pu_nitril_s_pp_i_as/",
+     "img": "assets/products/botinki_svarshchika_uteplennye_perfect_protection_prb15_csw_.jpg"
+    },
+    {
+     "id": "EP-1110",
+     "name": "Ботинки СВАРЩИКА \"PERFECT PROTECTION\" PRB12-CK ПУ-Нитрил с ПП и АС",
+     "price": 4623,
+     "priceText": "4 623 ₽",
+     "art": "PRB12-CK 120318",
+     "stock": 0,
+     "url": "https://205200.ru/product/botinki_svarshchika_perfect_protection_prb12_ck_pu_nitril_s_pp_i_as/",
+     "img": "assets/products/botinki_svarshchika_perfect_protection_prb12_ck_pu_nitril_s_.jpg"
+    },
+    {
+     "id": "EP-1111",
+     "name": "Ботинки поликарбонатный подносок, кевларовая стелька, нитрил арт. СТБ\\ПП\\КС\\019",
+     "price": 2380,
+     "priceText": "2 380 ₽",
+     "art": "СТБ\\ПП\\КС\\019",
+     "stock": 0,
+     "url": "https://205200.ru/product/botinki_polikarbonatnyy_podnosok_kevlarovaya_stelka_nitril_art_stb_pp_ks_019/",
+     "img": "assets/products/botinki_polikarbonatnyy_podnosok_kevlarovaya_stelka_nitril_a.jpg"
+    },
+    {
+     "id": "EP-1112",
+     "name": "Ботинки утепленные КАРБОГЕЛ 2 Н-КпПКЩ КП, нат. мех, Парижская Коммуна",
+     "price": 6503,
+     "priceText": "6 503 ₽",
+     "art": "1-147994",
+     "stock": 0,
+     "url": "https://205200.ru/product/botinki_uteplennye_karbogel_2_n_kppkshch_kp_nat_mekh_parizhskaya_kommuna/",
+     "img": "assets/products/botinki_uteplennye_karbogel_2_n_kppkshch_kp_nat_mekh_parizhs.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "spetsobuv-vlagostoykaya",
+   "title": "Спецобувь влагостойкая",
+   "group": "Спецобувь",
+   "desc": "Сапоги из ПВХ и ЭВА для влажных, загрязнённых и агрессивных сред.",
+   "items": [
+    {
+     "id": "EP-1113",
+     "name": "Сапоги рабочие женские \"Премиум\" из ПВХ, арт. 265-01, оливковые Sardonix",
+     "price": 895,
+     "priceText": "895 ₽",
+     "art": "265-01",
+     "stock": 31,
+     "url": "https://205200.ru/product/sapogi_rabochie_zhenskie_premium_iz_pvkh_art_265_01_olivkovye_sardonix_/",
+     "img": "assets/products/sapogi_rabochie_zhenskie_premium_iz_pvkh_art_265_01_olivkovy.jpg"
+    },
+    {
+     "id": "EP-1114",
+     "name": "Сапоги ПВХ рабочие мужские \"Шахтер\" из ПВХ с металлоподноском, арт. 165-07МП, оливковые Sardonix",
+     "price": 1507,
+     "priceText": "1 507 ₽",
+     "art": "165-07МП",
+     "stock": 28,
+     "url": "https://205200.ru/product/sapogi_pvkh_rabochie_muzhskie_shakhter_iz_pvkh_s_metallopodnoskom_art_165_07mp_olivkovye_sardonix_/",
+     "img": "assets/products/sapogi_pvkh_rabochie_muzhskie_shakhter_iz_pvkh_s_metallopodn.jpg"
+    },
+    {
+     "id": "EP-1115",
+     "name": "Сапоги рабочие мужские \"Внедорожник 4*4\" из ПВХ белые, арт. 165-03Б",
+     "price": 1219,
+     "priceText": "1 219 ₽",
+     "art": "165-03Б",
+     "stock": 24,
+     "url": "https://205200.ru/product/sapogi_rabochie_muzhskie_vnedorozhnik_4_4_iz_pvkh_belye_art_165_03b/",
+     "img": "assets/products/sapogi_rabochie_muzhskie_vnedorozhnik_4_4_iz_pvkh_belye_art_.jpg"
+    },
+    {
+     "id": "EP-1116",
+     "name": "Сапоги рабочие мужские \"Специалист\" из ПВХ, арт. 165-05МП, металлоподносок оливковые Sardonix",
+     "price": 1498,
+     "priceText": "1 498 ₽",
+     "art": "165-05МП",
+     "stock": 20,
+     "url": "https://205200.ru/product/sapogi_rabochie_muzhskie_spetsialist_iz_pvkh_art_165_05mp_metallopodnosok_olivkovye_sardonix_/",
+     "img": "assets/products/sapogi_rabochie_muzhskie_spetsialist_iz_pvkh_art_165_05mp_me.jpg"
+    },
+    {
+     "id": "EP-1117",
+     "name": "Сапоги ПВХ НМС КЩС \"Внедорожник\" 4*4 \"АРТ 165-03 Sardonix",
+     "price": 839,
+     "priceText": "839 ₽",
+     "art": "165-03",
+     "stock": 22,
+     "url": "https://205200.ru/product/sapogi_pvkh_nms_kshchs_vnedorozhnik_4_4_art_165_03_sardonix_/",
+     "img": "assets/products/sapogi_pvkh_nms_kshchs_vnedorozhnik_4_4_art_165_03_sardonix_.jpg"
+    },
+    {
+     "id": "EP-1118",
+     "name": "Сапоги ПВХ НМС КЩС с металлоподноском, мужские, высота 38 см",
+     "price": 1490,
+     "priceText": "1 490 ₽",
+     "art": "В-40 (Сириус 03508) 87470526 Факел",
+     "stock": 12,
+     "url": "https://205200.ru/product/sapogi_pvkh_nms_kshchs_s_metallopodnoskom_muzhskie_vysota_38_sm_olivkovyy/",
+     "img": "assets/products/sapogi_pvkh_nms_kshchs_s_metallopodnoskom_muzhskie_vysota_38.jpg"
+    },
+    {
+     "id": "EP-1119",
+     "name": "Сапоги ПВХ НМС КЩС с металлоподноском, женские, высота 34",
+     "price": 1462,
+     "priceText": "1 462 ₽",
+     "art": "Е-34 (Сириус 04729) 87470527 Факел",
+     "stock": 8,
+     "url": "https://205200.ru/product/sapogi_pvkh_nms_kshchs_s_metallopodnoskom_zhenskie_vysota_34_olivkovye/",
+     "img": "assets/products/sapogi_pvkh_nms_kshchs_s_metallopodnoskom_zhenskie_vysota_34.jpg"
+    },
+    {
+     "id": "EP-1120",
+     "name": "Галоши женские \"Бирюса\" Жанетт",
+     "price": 306,
+     "priceText": "306 ₽",
+     "art": "",
+     "stock": 7,
+     "url": "https://205200.ru/product/galoshi_zhenskie_biryusa_zhanett/",
+     "img": "assets/products/galoshi_zhenskie_biryusa_zhanett.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-golovy",
+   "title": "Защита головы",
+   "group": "СИЗ",
+   "desc": "Каски, подшлемники и защитные капюшоны с креплением под дополнительные СИЗ.",
+   "items": [
+    {
+     "id": "EP-1121",
+     "name": "Каска защитная СОМЗ-55 Favori®T RAPID оранжевая арт.75614",
+     "price": 444,
+     "priceText": "444 ₽",
+     "art": "75614",
+     "stock": 85,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_rapid_oranzhevaya_art_75614/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_rapid_oranzhevaya_art_75.jpg"
+    },
+    {
+     "id": "EP-1122",
+     "name": "Каска защитная СОМЗ-55 Favori®T оранжевая арт.75514",
+     "price": 339,
+     "priceText": "339 ₽",
+     "art": "75514",
+     "stock": 44,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_oranzhevaya_art_75514_1/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_oranzhevaya_art_75514_1.jpg"
+    },
+    {
+     "id": "EP-1123",
+     "name": "Каска защитная СОМЗ-55 Favori®Т Trek® RAPID красная арт.75616",
+     "price": 512,
+     "priceText": "512 ₽",
+     "art": "75616",
+     "stock": 38,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_trek_rapid_krasnaya_art_75616_1/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_trek_rapid_krasnaya_art_.jpg"
+    },
+    {
+     "id": "EP-1124",
+     "name": "Каска защитная СОМЗ-55 Favori®T Treki® RAPID белая арт.75617",
+     "price": 504,
+     "priceText": "504 ₽",
+     "art": "75617",
+     "stock": 35,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_treki_rapid_belaya_art_75617/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_treki_rapid_belaya_art_7.jpg"
+    },
+    {
+     "id": "EP-1125",
+     "name": "Каска защитная СОМЗ-55 Favori®T белая арт.75517",
+     "price": 333,
+     "priceText": "333 ₽",
+     "art": "75517",
+     "stock": 30,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_belaya_art_75517/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_belaya_art_75517.jpg"
+    },
+    {
+     "id": "EP-1126",
+     "name": "Каска защитная СОМЗ-55 Favori®T жёлтая 75515",
+     "price": 385,
+     "priceText": "385 ₽",
+     "art": "75515",
+     "stock": 17,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_zhyeltaya_75515/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_zhyeltaya_75515.jpg"
+    },
+    {
+     "id": "EP-1127",
+     "name": "Каска защитная СОМЗ-55 Favori®T красная арт.75516",
+     "price": 243,
+     "priceText": "243 ₽",
+     "art": "75516",
+     "stock": 8,
+     "url": "https://205200.ru/product/kaska_zashchitnaya_somz_55_favori_t_krasnaya_art_75516/",
+     "img": "assets/products/kaska_zashchitnaya_somz_55_favori_t_krasnaya_art_75516.jpg"
+    },
+    {
+     "id": "EP-1128",
+     "name": "Каскетка защитная RZ FavoriT CAP синяя 95518",
+     "price": 944,
+     "priceText": "944 ₽",
+     "art": "95518",
+     "stock": 2,
+     "url": "https://205200.ru/product/kasketka_zashchitnaya_rz_favorit_cap_sinyaya_95518/",
+     "img": "assets/products/kasketka_zashchitnaya_rz_favorit_cap_sinyaya_95518.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-litsa",
+   "title": "Защита лица и органов зрения",
+   "group": "СИЗ",
+   "desc": "Очки, щитки и маски с защитой от механических частиц, химии и излучения.",
+   "items": [
+    {
+     "id": "EP-1129",
+     "name": "Стекло светофильтр для маски сварщика 110*90 мм прозрачное",
+     "price": 12,
+     "priceText": "12 ₽",
+     "art": "",
+     "stock": 590,
+     "url": "https://205200.ru/product/steklo_svetofiltr_dlya_maski_svarshchika_110_90_mm_prozrachnoe/",
+     "img": "assets/products/steklo_svetofiltr_dlya_maski_svarshchika_110_90_mm_prozrachn.jpg"
+    },
+    {
+     "id": "EP-1130",
+     "name": "Очки открытые поликарбонатные (тип Люцерна)",
+     "price": 75,
+     "priceText": "75 ₽",
+     "art": "ОЧ304 (О-13011) Р1 (01505, 74953 Сириус)",
+     "stock": 263,
+     "url": "https://205200.ru/product/ochki_otkrytye_polikarbonatnye_tip_lyutserna_och304_o_13011/",
+     "img": "assets/products/ochki_otkrytye_polikarbonatnye_tip_lyutserna_och304_o_13011.jpg"
+    },
+    {
+     "id": "EP-1131",
+     "name": "Щиток защитный лицевой НБТ1 ВИЗИОН® арт.413130",
+     "price": 347,
+     "priceText": "347 ₽",
+     "art": "413130",
+     "stock": 99,
+     "url": "https://205200.ru/product/shchitok_zashchitnyy_litsevoy_nbt1_vizion_art_413130/",
+     "img": "assets/products/shchitok_zashchitnyy_litsevoy_nbt1_vizion_art_413130.jpg"
+    },
+    {
+     "id": "EP-1132",
+     "name": "Очки защитные закрытые с непрямой вентиляцией ЗН11 PANORAMA (PL) арт.21111",
+     "price": 293,
+     "priceText": "293 ₽",
+     "art": "21111",
+     "stock": 80,
+     "url": "https://205200.ru/product/ochki_zashchitnye_zakrytye_s_nepryamoy_ventilyatsiey_zn11_panorama_pl_art_21111/",
+     "img": "assets/products/ochki_zashchitnye_zakrytye_s_nepryamoy_ventilyatsiey_zn11_pa.jpg"
+    },
+    {
+     "id": "EP-1133",
+     "name": "Очки защитные открытые О15 HAMMER ACTIVE super (2С-1,2 PC) арт. 11530",
+     "price": 192,
+     "priceText": "192 ₽",
+     "art": "11530",
+     "stock": 77,
+     "url": "https://205200.ru/product/ochki_zashchitnye_otkrytye_o15_hammer_active_super_2s_1_2_pc_art_11530/",
+     "img": "assets/products/ochki_zashchitnye_otkrytye_o15_hammer_active_super_2s_1_2_pc.jpg"
+    },
+    {
+     "id": "EP-1134",
+     "name": "Очки защитные арт. JL-А051",
+     "price": 85,
+     "priceText": "85 ₽",
+     "art": "JL-А051",
+     "stock": 74,
+     "url": "https://205200.ru/product/ochki_zashchitnye_art_jl_a051/",
+     "img": "assets/products/ochki_zashchitnye_art_jl_a051.jpg"
+    },
+    {
+     "id": "EP-1135",
+     "name": "Очки защитные открытые O88 SURGUT super (2С-1.2 PC) арт.18830",
+     "price": 195,
+     "priceText": "195 ₽",
+     "art": "18830",
+     "stock": 69,
+     "url": "https://205200.ru/product/ochki_zashchitnye_otkrytye_o88_surgut_super_2s_1_2_pc_art_18830/",
+     "img": "assets/products/ochki_zashchitnye_otkrytye_o88_surgut_super_2s_1_2_pc_art_18.jpg"
+    },
+    {
+     "id": "EP-1136",
+     "name": "Очки защитные закрытые с прямой вентиляцией ЗП2 SUPER PANORAMA (РC) арт.30130",
+     "price": 441,
+     "priceText": "441 ₽",
+     "art": "30130",
+     "stock": 63,
+     "url": "https://205200.ru/product/ochki_zashchitnye_zakrytye_s_pryamoy_ventilyatsiey_zp2_super_panorama_rc_art_30130/",
+     "img": "assets/products/ochki_zashchitnye_zakrytye_s_pryamoy_ventilyatsiey_zp2_super.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-dykhaniya",
+   "title": "Защита органов дыхания",
+   "group": "СИЗ",
+   "desc": "Респираторы и полумаски классов FFP1–FFP3, сменные фильтры и патроны.",
+   "items": [
+    {
+     "id": "EP-1137",
+     "name": "JM-8622 Mircon Полумаска противоаэрозольная с клапаном, чашеобразная, класс защиты FFP2 NR D, в упаковке 10 шт",
+     "price": 74,
+     "priceText": "74 ₽",
+     "art": "JM-8622",
+     "stock": 470,
+     "url": "https://205200.ru/product/jm_8622_mircon_polumaska_protivoaerozolnaya_s_klapanom_chasheobraznaya_klass_zashchity_ffp2_nr_d_v_u/",
+     "img": "assets/products/jm_8622_mircon_polumaska_protivoaerozolnaya_s_klapanom_chash.jpg"
+    },
+    {
+     "id": "EP-1138",
+     "name": "Полумаска фильтрующая для защиты от аэрозолей, чашеобразная, с клапаном выдоха ВМ 8112 FFP1 NR D",
+     "price": 92,
+     "priceText": "92 ₽",
+     "art": "ВМ 8112 FFP1 NR D",
+     "stock": 569,
+     "url": "https://205200.ru/product/polumaska_filtruyushchaya_dlya_zashchity_ot_aerozoley_chasheobraznaya_s_klapanom_vydokha_vm_8112_ffp/",
+     "img": "assets/products/polumaska_filtruyushchaya_dlya_zashchity_ot_aerozoley_chashe.jpg"
+    },
+    {
+     "id": "EP-1139",
+     "name": "Полумаска фильтрующая SPIROTEK VS 2100 FFP1 (до 4 ПДК)",
+     "price": 82,
+     "priceText": "82 ₽",
+     "art": "",
+     "stock": 503,
+     "url": "https://205200.ru/product/polumaska_filtruyushchaya_spirotek_vs_2100_ffp1_do_4_pdk/",
+     "img": "assets/products/polumaska_filtruyushchaya_spirotek_vs_2100_ffp1_do_4_pdk.jpg"
+    },
+    {
+     "id": "EP-1140",
+     "name": "Респиратор фильтрующая модель \"Росток-3П\" FFP1 NR D",
+     "price": 65,
+     "priceText": "65 ₽",
+     "art": "",
+     "stock": 472,
+     "url": "https://205200.ru/product/respirator_filtruyushchaya_model_rostok_3p_ffp1_nr_d/",
+     "img": "assets/products/respirator_filtruyushchaya_model_rostok_3p_ffp1_nr_d.jpg"
+    },
+    {
+     "id": "EP-1141",
+     "name": "6542 Фильтр противогазовый Jeta Safety для защиты от органических, неорганических, кислых газов класса A1B1E1, в упаковке 2 шт",
+     "price": 687,
+     "priceText": "687 ₽",
+     "art": "6542",
+     "stock": 442,
+     "url": "https://205200.ru/product/6542_filtr_protivogazovyy_jeta_safety_dlya_zashchity_ot_organicheskikh_neorganicheskikh_kislykh_gazo/",
+     "img": "assets/products/6542_filtr_protivogazovyy_jeta_safety_dlya_zashchity_ot_orga.jpg"
+    },
+    {
+     "id": "EP-1142",
+     "name": "Респиратор полумаска фильтрующая \"НР3-0101\" FFP1 NR D",
+     "price": 51,
+     "priceText": "51 ₽",
+     "art": "НРЗ-0101",
+     "stock": 440,
+     "url": "https://205200.ru/product/respirator_polumaska_filtruyushchaya_nr3_0101_ffp1_nr_d_analog_zm_8101/",
+     "img": "assets/products/respirator_polumaska_filtruyushchaya_nr3_0101_ffp1_nr_d_anal.jpg"
+    },
+    {
+     "id": "EP-1143",
+     "name": "JM-8628 Mircon Полумаска противоаэрозольная с клапаном, с угольным слоем, чашеобразная, класс защиты FFP2 NR D, в упаковке 10 шт",
+     "price": 183,
+     "priceText": "183 ₽",
+     "art": "JM-8628",
+     "stock": 334,
+     "url": "https://205200.ru/product/jm_8628_mircon_polumaska_protivoaerozolnaya_s_klapanom_s_ugolnym_sloem_chasheobraznaya_klass_zashchi/",
+     "img": "assets/products/jm_8628_mircon_polumaska_protivoaerozolnaya_s_klapanom_s_ugo.jpg"
+    },
+    {
+     "id": "EP-1144",
+     "name": "Респиратор Спиротек VS 2200VR",
+     "price": 128,
+     "priceText": "128 ₽",
+     "art": "VS 2200VR",
+     "stock": 332,
+     "url": "https://205200.ru/product/respirator_spirotek_vs_2200vr/",
+     "img": "assets/products/respirator_spirotek_vs_2200vr.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-slukha",
+   "title": "Защита органов слуха",
+   "group": "СИЗ",
+   "desc": "Наушники, вкладыши и беруши для шумных производств.",
+   "items": [
+    {
+     "id": "EP-1145",
+     "name": "JEM20 Беруши противошумные из вспененного полиуретана, 37дБ",
+     "price": 15,
+     "priceText": "15 ₽",
+     "art": "JEM20 37дБ",
+     "stock": 554,
+     "url": "https://205200.ru/product/jem20_berushi_protivoshumnye_iz_vspenennogo_poliuretana_37db/",
+     "img": "assets/products/jem20_berushi_protivoshumnye_iz_vspenennogo_poliuretana_37db.jpg"
+    },
+    {
+     "id": "EP-1146",
+     "name": "JEM21 Беруши противошумные со шнурком Silentium Max, из вспененного полиуретана, 37дБ (упак 100 пар)",
+     "price": 30,
+     "priceText": "30 ₽",
+     "art": "JEM21 37дБ",
+     "stock": 373,
+     "url": "https://205200.ru/product/jem21_berushi_protivoshumnye_so_shnurkom_silentium_max_iz_vspenennogo_poliuretana_37db_upak_100_par/",
+     "img": "assets/products/jem21_berushi_protivoshumnye_so_shnurkom_silentium_max_iz_vs.jpg"
+    },
+    {
+     "id": "EP-1147",
+     "name": "Наушники противошумные 27 дБ JEM-603 Dynamic 27 дБ",
+     "price": 347,
+     "priceText": "347 ₽",
+     "art": "JEM-603",
+     "stock": 163,
+     "url": "https://205200.ru/product/naushniki_protivoshumnye_27_db_jem_603_dynamic_27_db/",
+     "img": "assets/products/naushniki_protivoshumnye_27_db_jem_603_dynamic_27_db.jpg"
+    },
+    {
+     "id": "EP-1148",
+     "name": "JEM10 Беруши, из мягкого гипоаллергенного вспененного полиуретана (уп. 200 пар)",
+     "price": 16,
+     "priceText": "16 ₽",
+     "art": "JEM10",
+     "stock": 135,
+     "url": "https://205200.ru/product/jem10_berushi_iz_myagkogo_gipoallergennogo_vspenennogo_poliuretana_up_200_par/",
+     "img": "assets/products/jem10_berushi_iz_myagkogo_gipoallergennogo_vspenennogo_poliu.jpg"
+    },
+    {
+     "id": "EP-1149",
+     "name": "Наушники противошумные СОМЗ-3 ПУМА арт.60300",
+     "price": 375,
+     "priceText": "375 ₽",
+     "art": "60300",
+     "stock": 99,
+     "url": "https://205200.ru/product/naushniki_protivoshumnye_somz_3_puma_art_60300/",
+     "img": "assets/products/naushniki_protivoshumnye_somz_3_puma_art_60300.jpg"
+    },
+    {
+     "id": "EP-1150",
+     "name": "JEM51 Противошумные беруши на шнурке (37 дБ)",
+     "price": 105,
+     "priceText": "105 ₽",
+     "art": "JEM51",
+     "stock": 86,
+     "url": "https://205200.ru/product/jem51_protivoshumnye_berushi_na_shnurke_37_db/",
+     "img": "assets/products/jem51_protivoshumnye_berushi_na_shnurke_37_db.jpg"
+    },
+    {
+     "id": "EP-1151",
+     "name": "Наушники противошумные СОМЗ-1 ЯГУАР арт.60100",
+     "price": 401,
+     "priceText": "401 ₽",
+     "art": "60100",
+     "stock": 74,
+     "url": "https://205200.ru/product/naushniki_protivoshumnye_somz_1_yaguar_art_60100/",
+     "img": "assets/products/naushniki_protivoshumnye_somz_1_yaguar_art_60100.jpg"
+    },
+    {
+     "id": "EP-1152",
+     "name": "JEM31 Sonido Max 33 дБ Беруши противошумные многоразовые силиконовые Jeta Safety в пластиковом боксе",
+     "price": 119,
+     "priceText": "119 ₽",
+     "art": "JEM31",
+     "stock": 59,
+     "url": "https://205200.ru/product/jem31_sonido_max_33_db_berushi_protivoshumnye_mnogorazovye_silikonovye_jeta_safety_v_plastikovom_bok/",
+     "img": "assets/products/jem31_sonido_max_33_db_berushi_protivoshumnye_mnogorazovye_s.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-ruk",
+   "title": "Защита рук",
+   "group": "СИЗ",
+   "desc": "Перчатки и краги: нитриловые, спилковые, термостойкие, диэлектрические.",
+   "items": [
+    {
+     "id": "EP-1153",
+     "name": "Перчатки п/ш двойные с ПВХ (точка)",
+     "price": 63,
+     "priceText": "63 ₽",
+     "art": "53Т, 1216",
+     "stock": 664,
+     "url": "https://205200.ru/product/perchatki_p_sh_dvoynye_s_pvkh_tochka/",
+     "img": "assets/products/perchatki_p_sh_dvoynye_s_pvkh_tochka.jpg"
+    },
+    {
+     "id": "EP-1154",
+     "name": "Перчатки Safeprotect \"МЕТЕОР-SP\"(нитрил, хлопковый слой, толщ.0,38мм, дл.330мм.)",
+     "price": 162,
+     "priceText": "162 ₽",
+     "art": "03040",
+     "stock": 442,
+     "url": "https://205200.ru/product/perchatki_safeprotect_meteor_sp_nitril_khlopkovyy_sloy_tolshch_0_38mm_dl_330mm_/",
+     "img": "assets/products/perchatki_safeprotect_meteor_sp_nitril_khlopkovyy_sloy_tolsh.jpg"
+    },
+    {
+     "id": "EP-1155",
+     "name": "Перчатки спилковые Siberia 0220",
+     "price": 324,
+     "priceText": "324 ₽",
+     "art": "0220",
+     "stock": 427,
+     "url": "https://205200.ru/product/perchatki_spilkovye_siberia_0220/",
+     "img": "assets/products/perchatki_spilkovye_siberia_0220.jpg"
+    },
+    {
+     "id": "EP-1156",
+     "name": "Перчатки Safeprotect \"НейпПол-Ч\" (нейлон с полиуретаном, цвет черный)",
+     "price": 53,
+     "priceText": "53 ₽",
+     "art": "03055",
+     "stock": 416,
+     "url": "https://205200.ru/product/perchatki_safeprotect_neyppol_ch_neylon_s_poliuretanom_tsvet_chernyy/",
+     "img": "assets/products/perchatki_safeprotect_neyppol_ch_neylon_s_poliuretanom_tsvet.jpg"
+    },
+    {
+     "id": "EP-1157",
+     "name": "Перчатки нитриловые с тяжелым покрытием крага полный облив 9912",
+     "price": 308,
+     "priceText": "308 ₽",
+     "art": "9912",
+     "stock": 402,
+     "url": "https://205200.ru/product/perchatki_nitrilovye_s_tyazhelym_pokrytiem_kraga_polnyy_obliv_9912/",
+     "img": "assets/products/perchatki_nitrilovye_s_tyazhelym_pokrytiem_kraga_polnyy_obli.jpg"
+    },
+    {
+     "id": "EP-1158",
+     "name": "Рукавицы брезентовые ОП-2 пл 480 Б-08, Б-06",
+     "price": 84,
+     "priceText": "84 ₽",
+     "art": "Б-08, Б-06",
+     "stock": 400,
+     "url": "https://205200.ru/product/rukavitsy_brezentovye_op_2_pl_480_b_08_b_06/",
+     "img": "assets/products/rukavitsy_brezentovye_op_2_pl_480_b_08_b_06.jpg"
+    },
+    {
+     "id": "EP-1159",
+     "name": "Перчатки п/ш двойные",
+     "price": 50,
+     "priceText": "50 ₽",
+     "art": "Арт-12150. 12151",
+     "stock": 391,
+     "url": "https://205200.ru/product/perchatki_p_sh_dvoynye_/",
+     "img": "assets/products/perchatki_p_sh_dvoynye_.jpg"
+    },
+    {
+     "id": "EP-1160",
+     "name": "Перчатки Safeprotect НейпЛат (нейлон+латекс, красный с черным)",
+     "price": 87,
+     "priceText": "87 ₽",
+     "art": "03056",
+     "stock": 297,
+     "url": "https://205200.ru/product/perchatki_safeprotect_neyplat_neylon_lateks_krasnyy_s_chernym/",
+     "img": "assets/products/perchatki_safeprotect_neyplat_neylon_lateks_krasnyy_s_cherny.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-vysota",
+   "title": "Защита от падения с высоты",
+   "group": "СИЗ",
+   "desc": "Страховочные привязи, стропы, карабины и анкерные устройства.",
+   "items": [
+    {
+     "id": "EP-1161",
+     "name": "УС I А Удерживающая система (пояс монтажный, предохранительный ПП I А)",
+     "price": 680,
+     "priceText": "680 ₽",
+     "art": "УС I А",
+     "stock": 19,
+     "url": "https://205200.ru/product/us_i_a_uderzhivayushchaya_sistema_poyas_montazhnyy_predokhranitelnyy_pp_i_a/",
+     "img": "assets/products/us_i_a_uderzhivayushchaya_sistema_poyas_montazhnyy_predokhra.jpg"
+    },
+    {
+     "id": "EP-1162",
+     "name": "УС II БЖ ук- Удерживающая система со стропом из троса с уширенным кушаком",
+     "price": 1539,
+     "priceText": "1 539 ₽",
+     "art": "УС II БЖ ук",
+     "stock": 5,
+     "url": "https://205200.ru/product/us_ii_bzh_uk_uderzhivayushchaya_sistema_so_stropom_iz_trosa_s_ushirennym_kushakom/",
+     "img": "assets/products/us_ii_bzh_uk_uderzhivayushchaya_sistema_so_stropom_iz_trosa_.jpg"
+    },
+    {
+     "id": "EP-1163",
+     "name": "УСП II Ж ук - Привязь страховочная УСП 2 Ж ук (уширенный кушак) (n)",
+     "price": 1131,
+     "priceText": "1 131 ₽",
+     "art": "УСП II Ж уш. куш (132252 сириус)",
+     "stock": 4,
+     "url": "https://205200.ru/product/usp_ii_zh_uk_privyaz_strakhovochnaya_usp_2_zh_uk_ushirennyy_kushak_n/",
+     "img": "assets/products/usp_ii_zh_uk_privyaz_strakhovochnaya_usp_2_zh_uk_ushirennyy_.jpg"
+    },
+    {
+     "id": "EP-1164",
+     "name": "УС II АЖ ук - Удерживающая система с наплечными и набедренными лямками, со стропом из полиами",
+     "price": 1437,
+     "priceText": "1 437 ₽",
+     "art": "УС II АЖ ук",
+     "stock": 4,
+     "url": "https://205200.ru/product/us_ii_azh_uk_uderzhivayushchaya_sistema_s_naplechnymi_i_nabedrennymi_lyamkami_so_stropom_iz_poliami/",
+     "img": "assets/products/us_ii_azh_uk_uderzhivayushchaya_sistema_s_naplechnymi_i_nabe.jpg"
+    },
+    {
+     "id": "EP-1165",
+     "name": "Строп Врег+Кс (исп.3) - регулируемый канат 2 м с большим монтажным и соединительным карабином",
+     "price": 714,
+     "priceText": "714 ₽",
+     "art": "Строп Врег+Кс (исп.3)",
+     "stock": 4,
+     "url": "https://205200.ru/product/strop_vreg_ks_isp_3_reguliruemyy_kanat_2_m_s_bolshim_montazhnym_i_soedinitelnym_karabinom/",
+     "img": "assets/products/strop_vreg_ks_isp_3_reguliruemyy_kanat_2_m_s_bolshim_montazh.jpg"
+    },
+    {
+     "id": "EP-1166",
+     "name": "Строп аАд+Кс (исп.3) - двойной строп из ленты с амортизатором, с двумя большими монтажными и соедини",
+     "price": 1233,
+     "priceText": "1 233 ₽",
+     "art": "",
+     "stock": 3,
+     "url": "https://205200.ru/product/strop_aad_ks_isp_3_dvoynoy_strop_iz_lenty_s_amortizatorom_s_dvumya_bolshimi_montazhnymi_i_soedini/",
+     "img": "assets/products/strop_aad_ks_isp_3_dvoynoy_strop_iz_lenty_s_amortizatorom_s_.jpg"
+    },
+    {
+     "id": "EP-1167",
+     "name": "Строп аБ+Кс - Строп из мет.троса в ПВХ оболочке с амортизатором",
+     "price": 782,
+     "priceText": "782 ₽",
+     "art": "",
+     "stock": 2,
+     "url": "https://205200.ru/product/strop_ab_ks_strop_iz_met_trosa_v_pvkh_obolochke_s_amortizatorom/",
+     "img": "assets/products/strop_ab_ks_strop_iz_met_trosa_v_pvkh_obolochke_s_amortizato.jpg"
+    },
+    {
+     "id": "EP-1168",
+     "name": "УС 1 В - Удерживающая система со стропом из каната",
+     "price": 935,
+     "priceText": "935 ₽",
+     "art": "УС 1 В",
+     "stock": 1,
+     "url": "https://205200.ru/product/us_1_v_uderzhivayushchaya_sistema_so_stropom_iz_kanata/",
+     "img": "assets/products/us_1_v_uderzhivayushchaya_sistema_so_stropom_iz_kanata.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "zashchita-koleney",
+   "title": "Защита коленей",
+   "group": "СИЗ",
+   "desc": "Наколенники и вкладыши для работ на коленях и в стеснённых условиях.",
+   "items": [
+    {
+     "id": "EP-1169",
+     "name": "Наколенники \"JANETT\" универсальные Жанетт",
+     "price": 466,
+     "priceText": "466 ₽",
+     "art": "87458939 Факел",
+     "stock": 42,
+     "url": "https://205200.ru/product/nakolenniki_janett_universalnye_zhanett/",
+     "img": "assets/products/nakolenniki_janett_universalnye_zhanett.jpg"
+    },
+    {
+     "id": "EP-1170",
+     "name": "Наколенники кожаные для сварщиков",
+     "price": 2125,
+     "priceText": "2 125 ₽",
+     "art": "НАК 015",
+     "stock": 5,
+     "url": "https://205200.ru/product/nakolenniki_kozhanye_dlya_svarshchikov/",
+     "img": "assets/products/nakolenniki_kozhanye_dlya_svarshchikov.jpg"
+    },
+    {
+     "id": "EP-1171",
+     "name": "Наколенники АМПАРО™ Полюс",
+     "price": 2537,
+     "priceText": "2 537 ₽",
+     "art": "691509 (48743 Сириу), 87472184 (факел)",
+     "stock": 0,
+     "url": "https://205200.ru/product/nakolenniki_amparo_polyus/",
+     "img": "assets/products/nakolenniki_amparo_polyus.jpg"
+    },
+    {
+     "id": "EP-1172",
+     "name": "Наколенники защитные, РОСОМЗ, АБСОЛЮТ® ZEN 211221",
+     "price": 3142,
+     "priceText": "3 142 ₽",
+     "art": "211221 (87494399)",
+     "stock": 0,
+     "url": "https://205200.ru/product/nakolenniki_zashchitnye_rosomz_absolyut_zen_211221/",
+     "img": "assets/products/nakolenniki_zashchitnye_rosomz_absolyut_zen_211221.jpg"
+    },
+    {
+     "id": "EP-1173",
+     "name": "Наколенники \"Комфорт\" (фиолетово-синий)",
+     "price": 451,
+     "priceText": "451 ₽",
+     "art": "НК",
+     "stock": 0,
+     "url": "https://205200.ru/product/nakolenniki_komfort_fioletovo_siniy/",
+     "img": "assets/products/nakolenniki_komfort_fioletovo_siniy.jpg"
+    },
+    {
+     "id": "EP-1174",
+     "name": "Наколенники АМПАРО™ Полюс, 691509",
+     "price": 1843,
+     "priceText": "1 843 ₽",
+     "art": "691509 (48743 Сириу), 87472184 (факел)",
+     "stock": 0,
+     "url": "https://205200.ru/product/nakolenniki_amparo_polyus_691509/",
+     "img": "assets/products/nakolenniki_amparo_polyus_691509.jpg"
+    },
+    {
+     "id": "EP-1175",
+     "name": "Наколенники арт. JL-S050",
+     "price": 815,
+     "priceText": "815 ₽",
+     "art": "НАК001",
+     "stock": 0,
+     "url": "https://205200.ru/product/nakolenniki_art_jl_s050/",
+     "img": "assets/products/nakolenniki_art_jl_s050.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "dermatologicheskie",
+   "title": "Дерматологические средства",
+   "group": "СИЗ",
+   "desc": "Защитные, очищающие и восстанавливающие кремы и пасты для кожи рук.",
+   "items": [
+    {
+     "id": "EP-1176",
+     "name": "Мыло туалетное твердое \"Детское\" \"Красавчик\" 100 гр (в упаковке)",
+     "price": 24,
+     "priceText": "24 ₽",
+     "art": "",
+     "stock": 12500,
+     "url": "https://205200.ru/product/mylo_tualetnoe_tverdoe_detskoe_krasavchik_100_gr_v_upakovke/",
+     "img": "assets/products/mylo_tualetnoe_tverdoe_detskoe_krasavchik_100_gr_v_upakovke.jpg"
+    },
+    {
+     "id": "EP-1177",
+     "name": "Мыло туалетное \"Детское\" Красавчик\" 100 гр в обертке ЧЕРЕДА",
+     "price": 27,
+     "priceText": "27 ₽",
+     "art": "",
+     "stock": 7368,
+     "url": "https://205200.ru/product/mylo_tualetnoe_detskoe_krasavchik_100_gr_v_obertke_chereda_66_sht_krasnodar/",
+     "img": "assets/products/mylo_tualetnoe_detskoe_krasavchik_100_gr_v_obertke_chereda_6.jpg"
+    },
+    {
+     "id": "EP-1178",
+     "name": "Мыло туалетное твердое \"Натуральное\" 100 гр в обертке (66 шт/кор) (Краснодар)",
+     "price": 26,
+     "priceText": "26 ₽",
+     "art": "100024",
+     "stock": 1430,
+     "url": "https://205200.ru/product/mylo_tualetnoe_tverdoe_naturalnoe_100_gr_v_obertke_66_sht_kor_krasnodar/",
+     "img": "assets/products/mylo_tualetnoe_tverdoe_naturalnoe_100_gr_v_obertke_66_sht_ko.jpg"
+    },
+    {
+     "id": "EP-1179",
+     "name": "Мыло туалетное твердое \"Краснодарское\" Свежесть моря 100 гр (в инд.упаковке)",
+     "price": 26,
+     "priceText": "26 ₽",
+     "art": "",
+     "stock": 1425,
+     "url": "https://205200.ru/product/mylo_tualetnoe_tverdoe_krasnodarskoe_svezhest_morya_100_gr_v_ind_upakovke/",
+     "img": "assets/products/mylo_tualetnoe_tverdoe_krasnodarskoe_svezhest_morya_100_gr_v.jpg"
+    },
+    {
+     "id": "EP-1180",
+     "name": "Мыло туалетное твердое \"Краснодарское\" с ароматом Ягод 100 гр (в упаковке)",
+     "price": 26,
+     "priceText": "26 ₽",
+     "art": "",
+     "stock": 1320,
+     "url": "https://205200.ru/product/mylo_tualetnoe_tverdoe_krasnodarskoe_s_aromatom_yagod_100_gr_v_upakovke/",
+     "img": "assets/products/mylo_tualetnoe_tverdoe_krasnodarskoe_s_aromatom_yagod_100_gr.jpg"
+    },
+    {
+     "id": "EP-1181",
+     "name": "Паста очищающая \"ЭЛЕН\", 100гр., для мытья сильнозагрязненных рук",
+     "price": 53,
+     "priceText": "53 ₽",
+     "art": "1017",
+     "stock": 645,
+     "url": "https://205200.ru/product/pasta_ochishchayushchaya_elen_100gr_dlya_mytya_silnozagryaznennykh_ruk/",
+     "img": "assets/products/pasta_ochishchayushchaya_elen_100gr_dlya_mytya_silnozagryazn.jpg"
+    },
+    {
+     "id": "EP-1182",
+     "name": "Крем Репеллент (от укусов кровососущих насекомых) \"ЭЛЕН\" 100 мл.",
+     "price": 125,
+     "priceText": "125 ₽",
+     "art": "1045",
+     "stock": 579,
+     "url": "https://205200.ru/product/krem_repellent_ot_ukusov_krovososushchikh_nasekomykh_elen_100_ml/",
+     "img": "assets/products/krem_repellent_ot_ukusov_krovososushchikh_nasekomykh_elen_10.jpg"
+    },
+    {
+     "id": "EP-1183",
+     "name": "Спрей для рук с антибактериальным эффектом «Элен» (Аlcohol 70%)",
+     "price": 125,
+     "priceText": "125 ₽",
+     "art": "1041",
+     "stock": 497,
+     "url": "https://205200.ru/product/sprey_dlya_ruk_s_antibakterialnym_effektom_spirtovoy_elen_linii_profline_100ml/",
+     "img": "assets/products/sprey_dlya_ruk_s_antibakterialnym_effektom_spirtovoy_elen_li.jpg"
+    }
+   ]
+  },
+  {
+   "slug": "ekzoskelety",
+   "title": "Промышленные экзоскелеты ProEXO",
+   "group": "СИЗ",
+   "desc": "Модульные экзоскелеты для снижения нагрузки на опорно-двигательный аппарат.",
+   "items": [
+    {
+     "id": "EP-1184",
+     "name": "Элемент промышленного экзоскелета ProEXO \"Ручки для бутылей\"",
+     "price": 2346,
+     "priceText": "2 346 ₽",
+     "art": "",
+     "stock": 1,
+     "url": "https://205200.ru/product/element_promyshlennogo_ekzoskeleta_proexo_ruchki_dlya_butyley/",
+     "img": "assets/products/element_promyshlennogo_ekzoskeleta_proexo_ruchki_dlya_butyle.jpg"
+    },
+    {
+     "id": "EP-1185",
+     "name": "Промышленный экзоскелет ProEXO комплектация «Boost» (Буст)",
+     "price": 99960,
+     "priceText": "99 960 ₽",
+     "art": "Экзоскелет Boost",
+     "stock": 1,
+     "url": "https://205200.ru/product/promyshlennyy_ekzoskelet_proexo_komplektatsiya_boost_bust/",
+     "img": "assets/products/promyshlennyy_ekzoskelet_proexo_komplektatsiya_boost_bust.jpg"
+    }
+   ]
+  }
+ ]
+}

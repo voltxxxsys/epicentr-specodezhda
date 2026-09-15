@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #07080b; }
+      body { font-family: Inter, Roboto, Arial, sans-serif; color: #f2f4f7; }
+      canvas { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+      .vignette {
+        position: absolute; inset: 0; pointer-events: none;
+        background:
+          linear-gradient(180deg, rgba(6,7,10,.94) 0%, rgba(6,7,10,.55) 16%, rgba(6,7,10,.08) 34%, rgba(6,7,10,.9) 100%),
+          radial-gradient(120% 60% at 50% 72%, transparent 42%, rgba(0,0,0,.55) 100%);
+      }
+      .head { position: absolute; left: 86px; top: 118px; max-width: 760px; }
+      .eyebrow {
+        font-size: 26px; letter-spacing: 0.22em; text-transform: uppercase; color: #6f7784;
+        display: inline-flex; align-items: center; gap: 16px; font-weight: 600;
+      }
+      .eyebrow::before { content: ""; width: 44px; height: 2px; background: linear-gradient(90deg, #ff6a1a, transparent); }
+      h1 { font-size: 104px; line-height: 0.98; letter-spacing: -0.035em; font-weight: 660; margin-top: 26px; }
+      h1 .accent {
+        background: linear-gradient(180deg, #fff 0%, #e6eaf0 40%, #9aa3af 72%, #f4f6f9 100%);
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+      }
+      .sub { font-size: 34px; color: #a7aeba; margin-top: 30px; line-height: 1.35; max-width: 700px; }
+      .stage {
+        position: absolute; left: 0; right: 0; bottom: 190px; text-align: center;
+      }
+      .stage__line { display: inline-flex; align-items: baseline; gap: 22px; }
+      .stage__title { font-size: 52px; font-weight: 620; }
+      .stage__price { font-size: 40px; color: #ff6a1a; font-variant-numeric: tabular-nums; }
+      .stage__cap { font-size: 28px; color: #6f7784; margin-top: 14px; }
+      .kit {
+        position: absolute; left: 86px; right: 86px; bottom: 96px;
+        display: flex; align-items: center; gap: 22px;
+      }
+      .kit__sum { font-size: 56px; font-weight: 660; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+      .kit__label { font-size: 26px; color: #6f7784; letter-spacing: .18em; text-transform: uppercase; }
+      .kit__bar { flex: 1; height: 5px; border-radius: 3px; background: #23272f; overflow: hidden; }
+      .kit__bar i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, #ff6a1a, #ffb066); }
+      .brand {
+        position: absolute; right: 86px; top: 118px; text-align: right;
+        font-size: 26px; letter-spacing: .16em; text-transform: uppercase; color: #8b93a0;
+      }
+      .clip { position: absolute; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-fps="30"
+         data-width="1080" data-height="1920">
+      <canvas id="stage-canvas" class="clip" data-start="0" data-duration="12" data-track-index="1"></canvas>
+      <div id="vignette" class="vignette clip" data-start="0" data-duration="12" data-track-index="2"></div>
+
+      <div id="head" class="head clip" data-start="0" data-duration="12" data-track-index="3">
+        <span class="eyebrow">Спецодежда · СИЗ · Пенза</span>
+        <h1>Собираем комплект <span class="accent">защиты</span></h1>
+        <p class="sub">9 позиций с реальными ценами каталога — комплект собирается прямо на фигуре</p>
+      </div>
+      <div id="brand" class="brand clip" data-start="0" data-duration="12" data-track-index="6">Эпицентр</div>
+
+      <div id="stage" class="stage clip" data-start="0" data-duration="12" data-track-index="4">
+        <div class="stage__line">
+          <b class="stage__title" id="stage-title">Трикотаж</b>
+          <span class="stage__price" id="stage-price">561 ₽</span>
+        </div>
+        <div class="stage__cap" id="stage-cap">Трикотаж и термобельё с нанесением логотипа компании</div>
+      </div>
+
+      <div id="kit" class="kit clip" data-start="0" data-duration="12" data-track-index="5">
+        <div>
+          <div class="kit__label">Комплект</div>
+          <div class="kit__sum" id="kit-sum">0 ₽</div>
+        </div>
+        <div class="kit__bar"><i id="kit-bar"></i></div>
+      </div>
+    </div>
+
+    <script type="module">
+      import * as THREE from './assets/three.module.js';
+      import { createRig, clamp, smooth, LAYERS } from './assets/rig.js';
+
+      /* ------------------------------------------------------------- данные */
+      const KIT = [
+        { key: 'base', id: 'EP-1076', price: 561 },
+        { key: 'boots', id: 'EP-1086', price: 4220 },
+        { key: 'trousers', id: 'EP-1002', price: 1881 },
+        { key: 'jacket', id: 'EP-1001', price: 4050 },
+        { key: 'gloves', id: 'EP-1155', price: 324 },
+        { key: 'helmet', id: 'EP-1123', price: 512 },
+        { key: 'respirator', id: 'EP-1139', price: 82 },
+        { key: 'vest', id: 'EP-1017', price: 261 },
+        { key: 'harness', id: 'EP-1163', price: 1131 },
+      ];
+      const money = (v) => new Intl.NumberFormat('ru-RU').format(Math.round(v)) + ' ₽';
+
+      /* ------------------------------------------------------------- сцена */
+      const canvas = document.getElementById('stage-canvas');
+      canvas.width = 1080; canvas.height = 1920;
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+      renderer.setPixelRatio(1);
+      renderer.setSize(1080, 1920, false);
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.05;
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(34, 1080 / 1920, 0.1, 60);
+      camera.position.set(0, 1.05, 4.4);
+      camera.lookAt(0, 1.0, 0);
+
+      scene.add(new THREE.AmbientLight(0x2b3340, 0.6));
+      const key = new THREE.DirectionalLight(0xdfe8ff, 2.4); key.position.set(2.6, 4.4, 3.4); scene.add(key);
+      const rim = new THREE.DirectionalLight(0xffffff, 2.0); rim.position.set(-3.2, 2.6, -3.0); scene.add(rim);
+      const accent = new THREE.PointLight(0xff6a1a, 22, 10, 2); accent.position.set(1.8, 0.9, 1.4); scene.add(accent);
+      const cool = new THREE.PointLight(0x6f9dff, 10, 10, 2); cool.position.set(-2.0, 1.5, -1.0); scene.add(cool);
+
+      const chrome = new THREE.MeshPhysicalMaterial({ color: 0xcfd6df, metalness: 1, roughness: 0.15 });
+      const fabric = new THREE.MeshPhysicalMaterial({ color: 0x232833, roughness: 0.9, metalness: 0.02 });
+      const accentMat = new THREE.MeshPhysicalMaterial({ color: 0xff6a1a, roughness: 0.5, metalness: 0.1 });
+      const rig = createRig({ chrome, fabric, accent: accentMat, spritePlaceholder: new THREE.MeshBasicMaterial({ transparent: true, opacity: 0 }), sprite: {} });
+      scene.add(rig.root);
+      rig.setMode('shell');
+
+      /* оболочки проявляются растворением (как на сайте) */
+      const revealParams = new Map();
+      rig.layers.forEach((l) => {
+        l.shells.traverse((o) => {
+          if (!o.isMesh) return;
+          const m = o.material.clone();
+          m.onBeforeCompile = (sh) => {
+            sh.uniforms.uReveal = { value: 1 };
+            sh.vertexShader = sh.vertexShader
+              .replace('#include <common>', '#include <common>\nvarying vec3 vRp;')
+              .replace('#include <begin_vertex>', '#include <begin_vertex>\nvRp = position;');
+            sh.fragmentShader = sh.fragmentShader
+              .replace('#include <common>', `#include <common>
+                uniform float uReveal; varying vec3 vRp;
+                float h11(float p){ p = fract(p*0.1031); p *= p+33.33; p *= p+p; return fract(p); }
+                float n3(vec3 x){ vec3 i = floor(x); vec3 f = fract(x); f = f*f*(3.0-2.0*f);
+                  float a=h11(i.x+i.y*57.0+i.z*113.0), b=h11(i.x+1.0+i.y*57.0+i.z*113.0);
+                  float c=h11(i.x+(i.y+1.0)*57.0+i.z*113.0), d=h11(i.x+1.0+(i.y+1.0)*57.0+i.z*113.0);
+                  float e=h11(i.x+i.y*57.0+(i.z+1.0)*113.0), g=h11(i.x+1.0+i.y*57.0+(i.z+1.0)*113.0);
+                  float k=h11(i.x+(i.y+1.0)*57.0+(i.z+1.0)*113.0), l=h11(i.x+1.0+(i.y+1.0)*57.0+(i.z+1.0)*113.0);
+                  return mix(mix(mix(a,b,f.x), mix(c,d,f.x), f.y), mix(mix(e,g,f.x), mix(k,l,f.x), f.y), f.z); }`)
+              .replace('#include <dithering_fragment>', `#include <dithering_fragment>
+                float edge = smoothstep(uReveal - 0.28, uReveal + 0.04, n3(vRp * 3.4) + vRp.y * 0.04);
+                if (edge < 0.5) discard;
+                gl_FragColor.rgb += vec3(1.0, 0.55, 0.24) * smoothstep(0.34, 0.0, abs(edge - 0.62)) * 0.8;
+              `);
+            m.userData.shader = sh;
+          };
+          m.needsUpdate = true;
+          o.material = m;
+          revealParams.set(l.key, revealParams.get(l.key) || []);
+          revealParams.get(l.key).push(m);
+        });
+      });
+
+      /* фоновый «жидкий металл» упрощён: две волны + отражение-градиент */
+      const bg = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.ShaderMaterial({
+        depthTest: false, depthWrite: false,
+        vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.999, 1.0); }',
+        fragmentShader: `precision highp float; varying vec2 vUv; uniform float uTime; uniform float uEnergy;
+          float h(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5); }
+          float n(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f);
+            return mix(mix(h(i), h(i+vec2(1,0)), f.x), mix(h(i+vec2(0,1)), h(i+vec2(1,1)), f.x), f.y); }
+          float fbm(vec2 p){ float s=0.0, a=0.5; for(int i=0;i<4;i++){ s+=a*n(p); p*=2.03; a*=0.5; } return s; }
+          void main(){
+            vec2 p = (vUv - 0.5) * vec2(0.5625, 1.0) * 3.0;
+            float t = uTime * 0.06;
+            float v = fbm(p * 0.5 + vec2(t, -t));
+            float w = fbm(p * 0.9 + 0.8 * v + t * 0.5);
+            vec3 col = mix(vec3(0.02,0.024,0.03), vec3(0.42,0.46,0.52), smoothstep(0.25,0.85,w));
+            col += vec3(0.5,0.24,0.08) * smoothstep(0.5,0.95,v) * 0.5;
+            col *= mix(0.6, 1.0, uEnergy);
+            float vig = smoothstep(1.35, 0.15, length((vUv-0.5) * vec2(1.0,1.6)) * 1.5);
+            col *= 0.25 + 0.8 * vig;
+            gl_FragColor = vec4(col, 1.0);
+          }`,
+        uniforms: { uTime: { value: 0 }, uEnergy: { value: 0.4 } },
+      }));
+      bg.renderOrder = -1;
+      bg.frustumCulled = false;
+      scene.add(bg);
+
+      /* --------------------------------------------------- детерминированное состояние */
+      const stageData = rig.layers.map((layer, i) => ({
+        layer,
+        start: i === 0 ? 0 : 0.05 + (i - 0.35) * 0.104,
+        end: i === 0 ? 0.09 : 0.05 + (i - 0.35) * 0.104 + 0.088,
+      }));
+      const maxEnd = Math.max(...stageData.map((s) => s.end));
+      stageData.forEach((s) => { s.start = (s.start / maxEnd) * 0.92; s.end = (s.end / maxEnd) * 0.92; });
+
+      const el = {
+        title: document.getElementById('stage-title'),
+        price: document.getElementById('stage-price'),
+        cap: document.getElementById('stage-cap'),
+        sum: document.getElementById('kit-sum'),
+        bar: document.getElementById('kit-bar'),
+      };
+
+      let lastStage = -1;
+      const setScene = (p, t) => {
+        const prog = clamp(p);
+        // поворот фигуры и «энергия» металла
+        rig.root.parent.rotation.y = -0.35 + prog * Math.PI * 1.1;
+        bg.material.uniforms.uTime.value = t;
+        bg.material.uniforms.uEnergy.value = 0.25 + prog * 0.75;
+        // слои
+        let glove = 0;
+        stageData.forEach((st, i) => {
+          let raw = smooth(prog, st.start, st.end);
+          if (i === 0) raw = Math.max(raw, 1 - smooth(prog, 0, 0.07));
+          const reveal = clamp(1 - raw);
+          const list = revealParams.get(st.layer.key) || [];
+          for (const m of list) if (m.userData.shader) m.userData.shader.uniforms.uReveal.value = reveal;
+          st.layer.shells.visible = reveal < 0.995;
+          if (st.layer.key === 'gloves') glove = raw;
+        });
+        // «дыхание» — детерминированное, от времени таймлайна
+        rig.tick(t);
+        // интерфейс
+        const per = 0.9 / KIT.length;
+        let active = Math.min(KIT.length - 1, Math.floor(prog / per));
+        if (prog >= 0.9) active = KIT.length - 1;
+        const sum = KIT.slice(0, active + 1).reduce((a, k) => a + k.price, 0);
+        el.bar.style.width = (prog * 100).toFixed(1) + '%';
+        el.sum.textContent = money(sum);
+        if (active !== lastStage) {
+          lastStage = active;
+          const layer = rig.layers[active];
+          el.title.textContent = layer ? layer.title : '';
+          el.cap.textContent = layer ? layer.caption : '';
+          el.price.textContent = '+' + money(KIT[active].price);
+        }
+        renderer.render(scene, camera);
+        void glove;
+        return prog;
+      };
+
+      /* первый кадр — до старта таймлайна */
+      setScene(0, 0);
+      window.__sceneReady = true;
+      window.__setScene = setScene;
+
+      /* ------------------------------------------------------------ таймлайн */
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const state = { p: 0, t: 0 };
+      tl.to(state, {
+        p: 1, t: 11.4, duration: 12, ease: 'none',
+        onUpdate: () => setScene(state.p, state.t),
+      }, 0);
+      // мягкая подсказка в начале и финальный акцент
+      tl.from('#head', { opacity: 0, y: -40, duration: 1.1, ease: 'power2.out' }, 0);
+      tl.from('#kit', { opacity: 0, y: 30, duration: 1, ease: 'power2.out' }, 0.3);
+      window.__timelines['main'] = tl;
+    </script>
+  </body>
+</html>

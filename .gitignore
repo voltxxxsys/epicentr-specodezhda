@@ -1,0 +1,27 @@
+# зависимости и служебное
+node_modules/
+.npm-cache/
+.npm-cache2/
+dsh-image-gen/
+
+# черновики и рабочие материалы
+_ref/
+_shots/
+_tools/
+*.bak
+*.bak2
+*.bak3
+npm-debug.log*
+
+# видео-проект: тяжёлые артефакты рендера и зависимости
+video/*/renders/
+video/*/node_modules/
+video/*/_frames/
+video/*/package-lock.json
+
+# системное
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

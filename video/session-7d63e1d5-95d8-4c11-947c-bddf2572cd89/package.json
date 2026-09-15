@@ -1,0 +1,11 @@
+{
+  "name": "session-7d63e1d5-95d8-4c11-947c-bddf2572cd89",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.7.60 preview",
+    "check": "npx --yes hyperframes@0.7.60 check",
+    "render": "npx --yes hyperframes@0.7.60 render",
+    "publish": "npx --yes hyperframes@0.7.60 publish"
+  }
+}

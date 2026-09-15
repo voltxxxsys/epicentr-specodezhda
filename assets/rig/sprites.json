@@ -1,0 +1,128 @@
+[
+ {
+  "id": "EP-1076",
+  "sprite": "assets/rig/base.png",
+  "transparency": 48,
+  "w": 175,
+  "h": 620,
+  "aspect": 0.2823,
+  "kept": 51271,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ },
+ {
+  "id": "EP-1086",
+  "sprite": "assets/rig/boots.png",
+  "transparency": 25,
+  "w": 314,
+  "h": 300,
+  "aspect": 1.0467,
+  "kept": 121261,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ },
+ {
+  "id": "EP-1002",
+  "sprite": "assets/rig/trousers.png",
+  "transparency": 64,
+  "w": 320,
+  "h": 560,
+  "aspect": 0.5714,
+  "kept": 70632,
+  "bg": [
+   233,
+   232,
+   230
+  ]
+ },
+ {
+  "id": "EP-1001",
+  "sprite": "assets/rig/jacket.png",
+  "transparency": 1,
+  "w": 465,
+  "h": 620,
+  "aspect": 0.75,
+  "kept": 267934,
+  "bg": [
+   157,
+   139,
+   143
+  ]
+ },
+ {
+  "id": "EP-1155",
+  "sprite": "assets/rig/gloves.png",
+  "transparency": 29,
+  "w": 221,
+  "h": 200,
+  "aspect": 1.105,
+  "kept": 210679,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ },
+ {
+  "id": "EP-1123",
+  "sprite": "assets/rig/helmet.png",
+  "transparency": 33,
+  "w": 321,
+  "h": 250,
+  "aspect": 1.284,
+  "kept": 87026,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ },
+ {
+  "id": "EP-1139",
+  "sprite": "assets/rig/respirator.png",
+  "transparency": 25,
+  "w": 193,
+  "h": 200,
+  "aspect": 0.965,
+  "kept": 252465,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ },
+ {
+  "id": "EP-1017",
+  "sprite": "assets/rig/vest.png",
+  "transparency": 25,
+  "w": 665,
+  "h": 600,
+  "aspect": 1.1083,
+  "kept": 218376,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ },
+ {
+  "id": "EP-1163",
+  "sprite": "assets/rig/harness.png",
+  "transparency": 54,
+  "w": 194,
+  "h": 420,
+  "aspect": 0.4619,
+  "kept": 58858,
+  "bg": [
+   255,
+   255,
+   255
+  ]
+ }
+]

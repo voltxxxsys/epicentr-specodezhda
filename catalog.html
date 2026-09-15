@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог спецодежды, спецобуви и СИЗ — Эпицентр (демо)</title>
+<meta name="description" content="Каталог интернет-магазина «Эпицентр»: спецодежда, спецобувь и средства индивидуальной защиты с ценами и наличием. Демо-концепция.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<div class="page-head">
+  <div class="container">
+    <nav class="breadcrumbs">
+      <a href="index.html">Главная</a><span>/</span><a href="catalog.html">Каталог</a><span>/</span><b id="crumb-cat" style="font-weight:520;color:var(--text-2)">Весь каталог</b>
+    </nav>
+    <h1 id="catalog-title">Весь каталог</h1>
+    <p class="lead">185 позиций с ценами и наличием: спецодежда, спецобувь и средства индивидуальной защиты.
+      Поможем подобрать комплект под риск-профиль предприятия и нанесём ваш логотип.</p>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container catalog-layout">
+
+    <aside class="filters">
+      <div>
+        <h4>Направления</h4>
+        <div class="filter-list" id="filter-groups"></div>
+      </div>
+
+      <div>
+        <h4>Категории</h4>
+        <div class="filter-list" id="filter-cats"></div>
+      </div>
+
+      <div class="range">
+        <h4 style="margin:0">Цена</h4>
+        <input type="range" id="filter-price" min="0" step="500" value="100000" aria-label="Максимальная цена">
+        <div class="range__vals"><span>0 ₽</span><span id="price-val">до 100 000 ₽</span></div>
+      </div>
+
+      <div>
+        <h4>Наличие</h4>
+        <label class="check"><input type="checkbox" id="filter-stock"> Только в наличии на складе</label>
+      </div>
+
+      <div style="display:grid;gap:10px">
+        <button class="btn btn--ghost btn--sm" type="button" id="filters-reset">Сбросить фильтры</button>
+        <p class="small muted">Демо-каталог: цены, артикулы и наличие взяты с действующего сайта 205200.ru.</p>
+      </div>
+    </aside>
+
+    <div>
+      <div class="catalog-toolbar">
+        <span class="muted" id="catalog-count">185 товаров</span>
+        <select class="select-pill" id="catalog-sort" aria-label="Сортировка">
+          <option value="popular">По популярности</option>
+          <option value="price-asc">Сначала дешёвые</option>
+          <option value="price-desc">Сначала дорогие</option>
+          <option value="stock">По наличию</option>
+        </select>
+        <span class="chip is-active">Юридическим лицам — персональная скидка</span>
+      </div>
+
+      <div class="grid product-grid" id="catalog-grid" style="grid-template-columns:repeat(3,1fr)"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <div class="cta-band__media"><img src="assets/gen/liquid-metal.jpg" alt=""></div>
+      <div>
+        <span class="eyebrow">Спецификация</span>
+        <h2 style="margin:14px 0">Соберём спецификацию под ваш риск-профиль</h2>
+        <p class="lead">Пришлите список профессий или просто опишите производство — подберём комплекты,
+          посчитаем стоимость по объемам и подготовим счёт.</p>
+      </div>
+      <form class="lead-form" onsubmit="event.preventDefault(); window.EP && window.EP.toast('Заявка отправлена — демо-режим'); this.reset();">
+        <input type="text" placeholder="Компания" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="E-mail">
+        <button class="btn btn--block" type="submit">Получить спецификацию</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script type="module">
+  import { boot } from './js/main.js';
+  boot('catalog');
+</script>
+</body>
+</html>

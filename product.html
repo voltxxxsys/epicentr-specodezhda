@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Товар — Эпицентр (демо)</title>
+<meta name="description" content="Карточка товара интернет-магазина «Эпицентр»: цена, наличие, характеристики, нанесение логотипа. Демо-концепция.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<div class="page-head" style="padding-bottom:0;border-bottom:0">
+  <div class="container">
+    <nav class="breadcrumbs">
+      <a href="index.html">Главная</a><span>/</span>
+      <a href="catalog.html">Каталог</a><span>/</span>
+      <a href="catalog.html" id="crumb-cat">Категория</a><span>/</span>
+      <b id="crumb-name" style="font-weight:520;color:var(--text-2)">Товар</b>
+    </nav>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container product-page" id="product-page"></div>
+</section>
+
+<section class="section section--tight" style="border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab is-active" data-tab="tab-desc" type="button">Описание</button>
+      <button class="tab" data-tab="tab-spec" type="button">Характеристики</button>
+      <button class="tab" data-tab="tab-pay" type="button">Доставка и оплата</button>
+      <button class="tab" data-tab="tab-logo" type="button">Нанесение логотипа</button>
+    </div>
+
+    <div class="tab-panel is-active" id="tab-desc">
+      <div class="article">
+        <p>Позиция поставляется со склада в Пензе и соответствует требованиям ТР ТС 019/2011 и ГОСТ.
+          Доступны размерные ряды 44–62 и рост 170–188; по запросу — корпоративный цвет и усиленные
+          элементы для конкретных условий труда.</p>
+        <p>При заказе через сайт юридическим лицам предоставляется персональная скидка, самостоятельный
+          выбор позиций каталога и удобный формат коммуникации: спецификация с артикулами, счёт и УПД.</p>
+        <ul>
+          <li>Поможем с выбором — бесплатная консультация менеджера и инженера по охране труда</li>
+          <li>Нанесём ваш логотип: шелкография, вышивка, термотрансфер</li>
+          <li>Доставим в любую точку России выбранным вами способом</li>
+          <li>Возможны стирка, ремонт и аренда спецодежды по договору обслуживания</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-spec">
+      <table class="specs" id="spec-table"></table>
+    </div>
+
+    <div class="tab-panel" id="tab-pay">
+      <div class="article">
+        <p><b>Пенза:</b> самовывоз со склада по адресу ул. Заводское шоссе, 6 или доставка курьером.</p>
+        <p><b>Россия:</b> СДЭК, Деловые Линии, Почта России и другие транспортные компании. Отгрузка
+          со склада — 1–2 рабочих дня, доставка до терминала получателя — 3–10 дней в зависимости от региона.</p>
+        <p><b>Оплата:</b> безналичный расчёт для юридических лиц (счёт, УПД), оплата картой для физических лиц,
+          для постоянных клиентов возможна отсрочка платежа.</p>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-logo">
+      <div class="article">
+        <p>Нанесём логотип компании на изделия: шелкография (от 30 шт.), вышивка (от 1 шт.),
+          термотрансфер (от 1 шт.). Возможно нанесение на одежду, которая уже есть у вас на складе.</p>
+        <p>Подготовим макет и покажем, как логотип будет выглядеть на ткани, — до запуска тиража.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Похожие позиции</span>
+        <h2>Из этой же категории</h2>
+      </div>
+      <a class="link-arrow" href="catalog.html">Весь каталог →</a>
+    </div>
+    <div class="grid product-grid" id="related-grid"></div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script type="module">
+  import { boot } from './js/main.js';
+  boot('product');
+</script>
+</body>
+</html>

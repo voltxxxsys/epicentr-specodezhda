@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Спецодежда в Пензе купить по цене производителя | Эпицентр — демо-концепция</title>
+<meta name="description" content="Демо-концепция многостраничного сайта интернет-магазина спецодежды, спецобуви и СИЗ «Эпицентр»: 3D-подбор комплекта, каталог с ценами, услуги, доставка по России.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<!-- ============================ 3D-ГЕРОЙ ============================ -->
+<section class="hero3d" id="hero3d">
+  <div class="hero3d__sticky">
+    <canvas class="hero3d__canvas" id="hero-canvas"></canvas>
+    <div class="hero-photo" id="hero-photo" aria-hidden="true"></div>
+    <div class="hero3d__grain"></div>
+    <div class="hero3d__vignette"></div>
+
+    <div class="hero3d__ui">
+      <div class="hero-copy">
+        <span class="eyebrow">Спецодежда · Спецобувь · СИЗ · Пенза</span>
+        <h1 class="display">Собираем комплект <span class="accent-glow">защиты</span> — с ног до головы</h1>
+        <p class="lead">Прокрутите страницу: на манекен по слоям надевается экипировка — с ценами из каталога и наличием на складе в Пензе. Финальный комплект соберём под ваш риск-профиль и нанесём логотип компании.</p>
+        <div class="hero-copy__cta">
+          <a class="btn" href="catalog.html">Подобрать комплект</a>
+          <a class="btn btn--ghost" href="#hits">Смотреть цены каталога</a>
+        </div>
+      </div>
+
+      <div class="hero-modes" role="group" aria-label="Режим показа">
+        <button class="hero-mode is-active" type="button" data-mode="photo" title="Комплект надевается кадрами — легко грузится на телефоне">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg>
+          Фото
+        </button>
+        <button class="hero-mode" type="button" data-mode="3d" title="Интерактивная 3D-сцена: вращение и надевание слоёв">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"/><path d="M4 7l8 4 8-4M12 21V11"/></svg>
+          3D
+        </button>
+      </div>
+
+      <div class="hero-steps" id="hero-steps"></div>
+
+      <div class="hero-stage">
+        <div class="hero-stage__line">
+          <b id="stage-title">Трикотаж и термобельё</b>
+          <span id="stage-price">+ 561 ₽ · в комплекте 561 ₽</span>
+        </div>
+        <div class="hero-stage__sub" id="stage-sub">Трикотаж с нанесением логотипа компании</div>
+      </div>
+
+      <div class="hero-kit">
+        <div class="hero-kit__row">
+          <span class="hero-kit__label">Собираем комплект</span>
+          <span class="hero-kit__label" id="kit-counter">из 6 позиций</span>
+        </div>
+        <div class="hero-kit__sum" id="kit-sum">0 ₽</div>
+        <div class="hero-kit__items" id="kit-items"></div>
+        <div class="hero-kit__bar"><i id="kit-bar"></i></div>
+        <div class="hero-kit__card" id="kit-card" hidden>
+          <img id="kit-card-img" src="" alt="">
+          <div>
+            <div class="hero-kit__card-name" id="kit-card-name"></div>
+            <div class="hero-kit__card-price" id="kit-card-price"></div>
+          </div>
+        </div>
+        <span class="small muted">Цены и наличие — с действующего каталога, без наценки за подбор</span>
+      </div>
+
+      <div class="hero-hint">
+        <span>Скролл</span>
+        <span class="hero-hint__line"></span>
+      </div>
+    </div>
+
+    <div class="hero-loading" id="hero-loading">
+      <div class="hero-loading__inner">
+        <span class="eyebrow">Загрузка 3D-сцены</span>
+        <span class="hero-loading__bar"><i></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЕГУЩАЯ СТРОКА ============================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Соответствие ГОСТ</span><span>Доставка по России</span><span>Нанесение логотипов</span>
+    <span>Стирка и ремонт спецодежды</span><span>Аренда комплектов</span><span>Экзоскелеты ProEXO</span>
+    <span>Склад в Пензе — 185 позиций</span>
+    <span>Соответствие ГОСТ</span><span>Доставка по России</span><span>Нанесение логотипов</span>
+    <span>Стирка и ремонт спецодежды</span><span>Аренда комплектов</span><span>Экзоскелеты ProEXO</span>
+    <span>Склад в Пензе — 185 позиций</span>
+  </div>
+</div>
+
+<!-- ============================ КАТАЛОГ ПРОДУКЦИИ ============================ -->
+<section class="section" id="catalog">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Каталог продукции</span>
+        <h2>Три направления,<br>закрывающие задачу целиком</h2>
+        <p class="lead">Экипируем производство, медицину, охрану и сферу услуг: одежда, обувь и средства
+          индивидуальной защиты от проверенных производителей — РОСОМЗ, Jeta Safety, Delta Plus, БАРС, Молдшуз.</p>
+      </div>
+      <a class="link-arrow" href="catalog.html">Весь каталог →</a>
+    </div>
+
+    <div class="grid cat-grid">
+      <a class="card cat-card" href="catalog.html?cat=spetsodezhda-zimnyaya" data-reveal>
+        <div class="cat-card__media">
+          <img src="assets/gen/cat-winter.jpg" alt="Спецодежда" loading="lazy">
+        </div>
+        <div class="cat-card__body">
+          <svg class="cat-card__icon" viewBox="0 0 48 48" fill="none" stroke="#ff6a1a" stroke-width="1.5">
+            <path d="M17 8 8 12v10l4-1v19h24V21l4 1V12L31 8l-3 4h-8l-3-4Z"/><path d="M24 12v28"/>
+          </svg>
+          <span class="cat-card__count">10 категорий · 80 позиций</span>
+          <h3>Спецодежда</h3>
+          <p class="small muted">Зимние и летние костюмы, защитная одежда, комплекты для медицины, охраны,
+            пищевых производств и сферы услуг.</p>
+          <span class="link-arrow">Смотреть →</span>
+        </div>
+      </a>
+
+      <a class="card cat-card" href="catalog.html?cat=spetsobuv-zimnyaya" data-reveal data-reveal-delay="1">
+        <div class="cat-card__media">
+          <img src="assets/gen/hero-gear.jpg" alt="Спецобувь" loading="lazy">
+        </div>
+        <div class="cat-card__body">
+          <svg class="cat-card__icon" viewBox="0 0 48 48" fill="none" stroke="#ff6a1a" stroke-width="1.5">
+            <path d="M14 8v14l-4 6v10h28v-8c0-3-2-4-8-5s-8-3-8-7V8h-8Z"/><path d="M10 34h28"/>
+          </svg>
+          <span class="cat-card__count">5 категорий · 40 позиций</span>
+          <h3>Спецобувь</h3>
+          <p class="small muted">Летняя, зимняя, влагостойкая и термостойкая обувь с защитным подноском,
+            медицинские сабо и повседневные модели.</p>
+          <span class="link-arrow">Смотреть →</span>
+        </div>
+      </a>
+
+      <a class="card cat-card" href="catalog.html?cat=zashchita-golovy" data-reveal data-reveal-delay="2">
+        <div class="cat-card__media">
+          <img src="assets/gen/cat-protective.jpg" alt="Средства индивидуальной защиты" loading="lazy">
+        </div>
+        <div class="cat-card__body">
+          <svg class="cat-card__icon" viewBox="0 0 48 48" fill="none" stroke="#ff6a1a" stroke-width="1.5">
+            <path d="M24 8c8 0 14 6 14 14v10H10V22c0-8 6-14 14-14Z"/><path d="M8 34h32"/><path d="M24 8v26"/>
+          </svg>
+          <span class="cat-card__count">11 категорий · 65 позиций</span>
+          <h3>Средства индивидуальной защиты</h3>
+          <p class="small muted">Защита головы, зрения, дыхания, слуха и рук, привязи для работ на высоте,
+            наколенники, экзоскелеты ProEXO.</p>
+          <span class="link-arrow">Смотреть →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ПРЕИМУЩЕСТВА ============================ -->
+<section class="section section--tight" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="grid features-grid">
+      <div class="feature" data-reveal>
+        <svg class="feature__icon" viewBox="0 0 40 40" fill="none" stroke-width="1.5"><path d="M20 5 8 11v9c0 8 5 13 12 15 7-2 12-7 12-15v-9L20 5Z"/><path d="m14 20 4 4 8-9"/></svg>
+        <h3>Высокое качество</h3>
+        <p>Сотрудничаем только с проверенными брендами и заводами-производителями.</p>
+      </div>
+      <div class="feature" data-reveal data-reveal-delay="1">
+        <svg class="feature__icon" viewBox="0 0 40 40" fill="none" stroke-width="1.5"><path d="M6 12h16v14H6z"/><path d="M22 17h7l5 5v4h-12z"/><circle cx="12" cy="29" r="3"/><circle cx="28" cy="29" r="3"/></svg>
+        <h3>Доставка по России</h3>
+        <p>Отгружаем выбранным вами способом — от самовывоза в Пензе до СДЭК и Деловых Линий.</p>
+      </div>
+      <div class="feature" data-reveal data-reveal-delay="2">
+        <svg class="feature__icon" viewBox="0 0 40 40" fill="none" stroke-width="1.5"><circle cx="20" cy="15" r="6"/><path d="M9 34c1-6 5.5-9 11-9s10 3 11 9"/></svg>
+        <h3>Бесплатные консультации</h3>
+        <p>Менеджеры и инженер по охране труда оперативно ответят на вопросы по подбору.</p>
+      </div>
+      <div class="feature" data-reveal data-reveal-delay="3">
+        <svg class="feature__icon" viewBox="0 0 40 40" fill="none" stroke-width="1.5"><circle cx="20" cy="21" r="13"/><path d="M20 13v9l6 4"/><path d="M16 4h8"/></svg>
+        <h3>Соблюдение сроков</h3>
+        <p>Выполняем работу в заранее оговорённые сроки, держим резерв на складе.</p>
+      </div>
+      <div class="feature" data-reveal data-reveal-delay="4">
+        <svg class="feature__icon" viewBox="0 0 40 40" fill="none" stroke-width="1.5"><path d="M12 6h16v28H12z"/><path d="M16 12h8M16 18h8M16 24h5"/><circle cx="26" cy="30" r="4"/></svg>
+        <h3>Соответствие ГОСТ</h3>
+        <p>Товар соответствует требованиям законодательства, декларации и сертификаты в наличии.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ВИТРИНА ============================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Магазин спецодежды Эпицентр</span>
+        <h2>Под задачу отрасли</h2>
+        <p class="lead">Собираем комплекты под конкретное производство: риск-профиль, условия труда,
+          требования по ГОСТ и фирменный стиль заказчика.</p>
+      </div>
+      <a class="link-arrow" href="catalog.html">Все категории →</a>
+    </div>
+    <div class="grid showcase-grid" id="showcase-grid"></div>
+  </div>
+</section>
+
+<!-- ============================ ХИТЫ КАТАЛОГА ============================ -->
+<section class="section" id="hits">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Хиты каталога · реальные цены</span>
+        <h2>Что чаще всего заказывают предприятия</h2>
+        <p class="lead">Данные демо-каталога перенесены с действующего сайта: названия, артикулы, цены и наличие.
+          Наведите порядок в спецификации — начните с этих позиций.</p>
+      </div>
+      <a class="link-arrow" href="catalog.html">Все 185 товаров →</a>
+    </div>
+
+    <div class="grid product-grid product-grid--5" data-catalog-teaser="spetsodezhda-zimnyaya" data-count="5" data-reveal></div>
+    <div style="height:26px"></div>
+    <div class="grid product-grid product-grid--5" data-catalog-teaser="spetsobuv-zimnyaya" data-count="5" data-reveal></div>
+  </div>
+</section>
+
+<!-- ============================ 3D-ПОДБОР ============================ -->
+<section class="section" id="3d-about" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="container" style="display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(26px,4vw,70px);align-items:center">
+    <div data-reveal>
+      <span class="eyebrow">Услуга</span>
+      <h2 style="margin:16px 0 18px">3D-подбор комплекта<br>вместо долгого согласования</h2>
+      <p class="lead" style="margin-bottom:22px">
+        Слева на главном экране — интерактивный манекен. Это прототип сервиса: специалист по охране труда
+        собирает комплект слоями, сразу видит посадку и итоговую стоимость, а вы получаете спецификацию
+        с артикулами и ценами.
+      </p>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:26px">
+        <div>
+          <div style="font-size:32px;font-weight:660" class="chrome-text"><span data-count="185">0</span></div>
+          <div class="small muted">позиций с ценами<br>в демо-каталоге</div>
+        </div>
+        <div>
+          <div style="font-size:32px;font-weight:660" class="chrome-text"><span data-count="9">0</span></div>
+          <div class="small muted">слоёв экипировки<br>в 3D-сцене</div>
+        </div>
+        <div>
+          <div style="font-size:32px;font-weight:660" class="chrome-text"><span data-count="48">0</span> ч</div>
+          <div class="small muted">средний срок<br>сборки спецификации</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn" href="#hero3d">Прокрутить 3D-сцену</a>
+        <a class="btn btn--ghost" href="services.html#3d">Услуга в деталях</a>
+      </div>
+    </div>
+    <div class="card" data-reveal data-reveal-delay="1" style="padding:0">
+      <img src="assets/gen/hero-mannequin.jpg" alt="3D-визуализация комплекта спецодежды" style="width:100%">
+    </div>
+  </div>
+</section>
+
+<!-- ============================ НАМ ДОВЕРЯЮТ ============================ -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Нам доверяют</span>
+        <h2>Отзывы предприятий</h2>
+      </div>
+      <div style="display:flex;gap:12px">
+        <a class="btn btn--ghost btn--sm" href="about.html#reviews">Все отзывы</a>
+        <a class="btn btn--sm" href="#lead">Оставить отзыв</a>
+      </div>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+      <article class="review" data-reveal>
+        <div class="review__top">
+          <span class="review__logo">ПКФ</span>
+          <div>
+            <div class="review__stars">
+              <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.6 5.5 22l1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.6 5.5 22l1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.6 5.5 22l1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.6 5.5 22l1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.6 5.5 22l1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+            </div>
+            <strong style="font-size:14.5px">ЗАО «Пензенская кондитерская фабрика»</strong>
+            <div class="review__date">03 июня 2021</div>
+          </div>
+        </div>
+        <p>«Выражает благодарность компании ООО «Эпицентр-Спецодежда» за индивидуальный подход
+          и профессионализм в области поставки спецодежды и средств индивидуальной защиты».</p>
+        <a class="link-arrow" href="about.html#reviews">Отзыв полностью →</a>
+      </article>
+
+      <article class="review" data-reveal data-reveal-delay="1">
+        <div class="review__top">
+          <span class="review__logo">АРС</span>
+          <div>
+            <strong style="font-size:14.5px">ООО «Арсенал»</strong>
+            <div class="review__date">14 декабря 2021</div>
+          </div>
+        </div>
+        <p>«За годы совместной работы ООО «Эпицентр-Спецодежда» не раз подтверждала свою надёжность
+          в качестве делового партнёра».</p>
+        <a class="link-arrow" href="about.html#reviews">Отзыв полностью →</a>
+      </article>
+
+      <article class="review" data-reveal data-reveal-delay="2">
+        <div class="review__top">
+          <span class="review__logo">РС</span>
+          <div>
+            <strong style="font-size:14.5px">ООО «Риквэст-Сервис»</strong>
+            <div class="review__date">03 июня 2021</div>
+          </div>
+        </div>
+        <p>«Выражаем благодарность за взаимовыгодное сотрудничество и добропорядочные партнёрские отношения.
+          За время сотрудничества компания зарекомендовала себя как профессиональный партнёр».</p>
+        <a class="link-arrow" href="about.html#reviews">Отзыв полностью →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ КОМАНДА ============================ -->
+<section class="section section--tight" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Наша команда</span>
+        <h2>Люди, которые подберут комплект</h2>
+      </div>
+      <a class="link-arrow" href="about.html#team">Все сотрудники →</a>
+    </div>
+    <div class="grid team-grid">
+      <article class="team-card" data-reveal>
+        <div class="team-card__photo"><span class="team-card__initials">КЮ</span></div>
+        <div class="team-card__body">
+          <span class="team-card__name">Климова Юлия Александровна</span>
+          <span class="team-card__role">Руководитель отдела продаж</span>
+        </div>
+      </article>
+      <article class="team-card" data-reveal data-reveal-delay="1">
+        <div class="team-card__photo"><span class="team-card__initials">ГН</span></div>
+        <div class="team-card__body">
+          <span class="team-card__name">Гаврилина Надежда Дмитриевна</span>
+          <span class="team-card__role">Менеджер по работе с клиентами</span>
+        </div>
+      </article>
+      <article class="team-card" data-reveal data-reveal-delay="2">
+        <div class="team-card__photo"><span class="team-card__initials">КД</span></div>
+        <div class="team-card__body">
+          <span class="team-card__name">Карпачев Дмитрий Владимирович</span>
+          <span class="team-card__role">Специалист по СИЗ и экзоскелетам</span>
+        </div>
+      </article>
+      <article class="team-card" data-reveal data-reveal-delay="3">
+        <div class="team-card__photo"><span class="team-card__initials">СА</span></div>
+        <div class="team-card__body">
+          <span class="team-card__name">Сёмкина Анастасия Игоревна</span>
+          <span class="team-card__role">Нанесение логотипов, сервис</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ПАРТНЁРЫ ============================ -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Наши партнёры</span>
+        <h2>Работаем напрямую с производителями</h2>
+      </div>
+      <a class="link-arrow" href="about.html#partners">Все партнёры →</a>
+    </div>
+    <div class="partners" data-reveal>
+      <span class="partner-pill">ООО «Сириус-Спецодежда»</span>
+      <span class="partner-pill">ООО «Факел-Спецодежда»</span>
+      <span class="partner-pill">ООО ТК «ЭлитСпецОбувь»</span>
+      <span class="partner-pill">ОАО «Суксунский оптико-механический завод» РОСОМЗ®</span>
+      <span class="partner-pill">АО «АЗРИ»</span>
+      <span class="partner-pill">Jeta Safety</span>
+      <span class="partner-pill">Delta Plus</span>
+      <span class="partner-pill">БАРС</span>
+      <span class="partner-pill">ProEXO</span>
+      <span class="partner-pill">Молдшуз</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЛОГ ============================ -->
+<section class="section section--tight" id="blog">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Блог</span>
+        <h2>Советы покупателям</h2>
+      </div>
+      <a class="link-arrow" href="blog.html">Все статьи →</a>
+    </div>
+    <div class="grid post-grid">
+      <article class="card post-card" data-reveal>
+        <div class="post-card__media"><img src="assets/gen/workwear-flatlay.jpg" alt="Как выбрать спецодежду" loading="lazy"></div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Советы покупателям</span>
+          <h3>Как выбрать спецодежду под условия труда: 7 критериев</h3>
+          <p class="small muted">Ткань, класс защиты, сезонность, посадка и требования к стирке — разбираем по пунктам.</p>
+          <div class="post-card__meta"><span>6 мин чтения</span><span>12 сентября</span></div>
+        </div>
+      </article>
+      <article class="card post-card" data-reveal data-reveal-delay="1">
+        <div class="post-card__media"><img src="assets/gen/cat-protective.jpg" alt="Правила выбора СИЗ" loading="lazy"></div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Охрана труда</span>
+          <h3>Респиратор или полумаска: что нужно производству</h3>
+          <p class="small muted">Классы защиты FFP1–FFP3, сменные фильтры и типичные ошибки при подборе.</p>
+          <div class="post-card__meta"><span>5 мин чтения</span><span>3 сентября</span></div>
+        </div>
+      </article>
+      <article class="card post-card" data-reveal data-reveal-delay="2">
+        <div class="post-card__media"><img src="assets/gen/cat-medical.jpg" alt="Медицинская одежда" loading="lazy"></div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Советы покупателям</span>
+          <h3>Медицинская одежда, которая выдержит 200 стирок</h3>
+          <p class="small muted">Плотность ткани, обработка швов, устойчивость к дезинфекции.</p>
+          <div class="post-card__meta"><span>4 мин чтения</span><span>27 августа</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA / ЗАЯВКА ============================ -->
+<section class="section" id="lead">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <div class="cta-band__media"><img src="assets/gen/story-worker.jpg" alt=""></div>
+      <div>
+        <span class="eyebrow">Заявка</span>
+        <h2 style="margin:14px 0 14px">Не нашли нужной информации?</h2>
+        <p class="lead">Оставьте контакт — подберём комплект, посчитаем спецификацию и нанесём логотип.
+          Ответим в рабочее время Пн – Пт 8:30 – 17:30.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:22px" class="small muted">
+          <span>8 (8412) 205-200</span><span>·</span><span>8 (800) 444-39-55</span><span>·</span><span>205200@mail.ru</span>
+        </div>
+      </div>
+      <form class="lead-form" onsubmit="event.preventDefault(); window.EP && window.EP.toast('Заявка отправлена — демо-режим'); this.reset();">
+        <input type="text" placeholder="Компания" required>
+        <input type="text" placeholder="Контактное лицо" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="E-mail">
+        <textarea placeholder="Какие позиции нужны? Город доставки, количество сотрудников" rows="3"></textarea>
+        <button class="btn btn--block" type="submit">Связаться с консультантом</button>
+        <p class="small muted">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script type="module">
+  import { boot } from './js/main.js';
+  boot('home');
+</script>
+</body>
+</html>
