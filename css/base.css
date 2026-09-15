@@ -765,3 +765,11 @@ p { margin: 0; }
 @media (max-width: 1500px) {
   .hero-kit, .hero-steps { width: 226px; right: 22px; }
 }
+
+/* панель комплекта: чистая раскладка без наложений */
+.hero-kit__row { align-items: flex-start; gap: 14px; }
+.hero-kit__label { line-height: 1.25; }
+.hero-kit__count { font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-2); text-align: right; line-height: 1.4; }
+.hero-stage__line { display: flex; align-items: baseline; justify-content: center; gap: 10px; flex-wrap: nowrap; }
+.hero-stage__line #stage-price { white-space: nowrap; color: var(--accent); font-family: var(--mono); font-size: 12.5px; }
+.hero-kit__card-name { -webkit-line-clamp: 1; }

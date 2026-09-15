@@ -165,19 +165,53 @@ async function initHero() {
   }) : null;
 
   /* --- 3. 3D-сцена: включается по кнопке (тяжёлый режим) --- */
+  let threeApi = null;
+  let threeLoading = false;
+  async function ensure3d() {
+    if (threeApi || threeLoading) return threeApi;
+    threeLoading = true;
+    try {
+      const mod = await import('./three/scene.js');
+      threeApi = await mod.createHero(canvas, { mode: window.innerWidth < 800 ? 'vertical' : 'spin' });
+      section.dataset.mode3d = 'ready';
+    } catch (e) {
+      console.warn('3D недоступен:', e.message);
+      section.classList.add('hero3d--fallback');
+    }
+    threeLoading = false;
+    loading?.classList.add('is-hidden');
+    return threeApi;
+  }
+
+  let mode = 'photo';
+  function setMode(next) {
+    const want3d = next === '3d';
+    mode = want3d ? '3d' : 'photo';
+    localStorage.setItem('ep-hero-mode', mode);
+    section.dataset.mode = mode;
+    document.querySelectorAll('.hero-mode').forEach((b) => b.classList.toggle('is-active', b.dataset.mode === mode));
+    if (photoHost) photoHost.style.visibility = want3d ? 'hidden' : 'visible';
+    if (want3d) { ensure3d().then(() => onScroll()); }
+    onScroll();
+  }
+
   let lastScroll = -1;
   function onScroll() {
     const rect = section.getBoundingClientRect();
     const total = section.offsetHeight - window.innerHeight;
     const p = Math.min(1, Math.max(0, -rect.top / Math.max(total, 1)));
     window.__epProgress = p;
+    if (mode === '3d' && threeApi) threeApi.setProgress(p);
     if (photoHero) photoHero.setProgress(p); // кадры следуют за скроллом точно
     lastScroll = p;
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
-  section.dataset.mode = 'photo';
+  setMode(localStorage.getItem('ep-hero-mode') === '3d' ? '3d' : 'photo');
+  document.querySelectorAll('.hero-mode').forEach((btn) => {
+    btn.addEventListener('click', () => setMode(btn.dataset.mode));
+  });
 
   stepsEl?.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-step]');

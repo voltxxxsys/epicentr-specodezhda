@@ -31,11 +31,31 @@
         </div>
       </div>
 
-      
+      <div class="hero-modes" role="group" aria-label="Режим показа">
+        <button class="hero-mode is-active" type="button" data-mode="photo" title="Комплект надевается кадрами — легко грузится на телефоне">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg>
+          Фото
+        </button>
+        <button class="hero-mode" type="button" data-mode="3d" title="Интерактивная 3D-сцена: вращение и надевание слоёв">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"/><path d="M4 7l8 4 8-4M12 21V11"/></svg>
+          3D
+        </button>
+      </div>
+
+      <div class="hero-steps" id="hero-steps"></div>
+
+      <div class="hero-stage">
+        <div class="hero-stage__line">
+          <b id="stage-title">Трикотаж и термобельё</b>
+          <span id="stage-price">+ 561 ₽ · в комплекте 561 ₽</span>
+        </div>
+        <div class="hero-stage__sub" id="stage-sub">Трикотаж с нанесением логотипа компании</div>
+      </div>
+
       <div class="hero-kit">
         <div class="hero-kit__row">
-          <span class="hero-kit__label">Собираем<br>комплект</span>
-          <span class="hero-kit__count" id="kit-counter">из 6 позиций</span>
+          <span class="hero-kit__label">Собираем комплект</span>
+          <span class="hero-kit__label" id="kit-counter">из 6 позиций</span>
         </div>
         <div class="hero-kit__sum" id="kit-sum">0 ₽</div>
         <div class="hero-kit__items" id="kit-items"></div>
