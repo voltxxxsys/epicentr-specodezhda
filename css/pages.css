@@ -338,3 +338,100 @@
   .proto3d__modes { right: 16px; bottom: 16px; }
   .proto3d__hint { display: none; }
 }
+
+/* ==================== страница 3D-подбора ==================== */
+.cfg { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(320px, .85fr); gap: clamp(18px, 2.2vw, 34px); align-items: start; }
+
+.cfg__stage {
+  position: relative; aspect-ratio: 4 / 3; min-height: 520px;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 38%, #171b21 0%, #0a0c10 70%);
+  cursor: grab;
+}
+.cfg__stage:active { cursor: grabbing; }
+.cfg__stage.is-failed::after {
+  content: "3D-сцена недоступна в этом браузере"; position: absolute; inset: 0;
+  display: grid; place-items: center; color: var(--text-3); font-size: 14px;
+}
+.cfg__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.cfg__overlay { position: absolute; inset: 0; pointer-events: none; }
+.cfg__overlay > * { pointer-events: auto; }
+.cfg__badge {
+  position: absolute; top: 16px; left: 16px; padding: 7px 12px; border-radius: 999px;
+  border: 1px solid var(--line-2); background: rgba(9,10,13,.62); backdrop-filter: blur(10px);
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-3);
+}
+.cfg__current { position: absolute; left: 20px; bottom: 78px; display: grid; gap: 3px; max-width: 62%; }
+.cfg__current b { font-size: 20px; font-weight: 620; }
+.cfg__tools { position: absolute; left: 20px; bottom: 18px; display: flex; gap: 8px; }
+.cfg__tool {
+  display: inline-flex; align-items: center; gap: 7px; padding: 9px 14px; cursor: pointer;
+  border: 1px solid var(--line-2); border-radius: 999px; background: rgba(9,10,13,.6);
+  backdrop-filter: blur(10px); color: var(--text-2); font-size: 12.5px; font-weight: 560;
+  transition: all .3s var(--ease);
+}
+.cfg__tool svg { width: 15px; height: 15px; }
+.cfg__tool:hover { border-color: var(--accent); color: #fff; }
+.cfg__tool.is-active { background: var(--accent); border-color: var(--accent); color: #170901; }
+
+.cfg__panel {
+  position: sticky; top: 96px; padding: 20px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,.028), transparent), var(--surface);
+}
+.cfg__panel-title { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--text-3); margin-bottom: 14px; font-weight: 600; }
+.cfg__layers { display: grid; gap: 8px; max-height: 46vh; overflow: auto; padding-right: 4px; }
+.cfg__layers::-webkit-scrollbar { width: 6px; }
+.cfg__layers::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 3px; }
+
+.cfg-layer {
+  display: grid; grid-template-columns: 18px 42px 1fr auto; gap: 11px; align-items: center;
+  padding: 9px 11px; border: 1px solid var(--line); border-radius: 13px; cursor: pointer;
+  transition: all .3s var(--ease); background: rgba(255,255,255,.012);
+}
+.cfg-layer:hover { border-color: var(--line-2); }
+.cfg-layer.is-on { border-color: rgba(255,106,26,.55); background: rgba(255,106,26,.06); }
+.cfg-layer input { accent-color: var(--accent); width: 16px; height: 16px; }
+.cfg-layer img { width: 42px; height: 42px; object-fit: cover; border-radius: 9px; background: #0f1216; }
+.cfg-layer__text { display: grid; gap: 2px; min-width: 0; }
+.cfg-layer__text b { font-size: 13.5px; font-weight: 560; }
+.cfg-layer__note { font-size: 11px; color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cfg-layer__price { font-size: 13px; font-weight: 640; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cfg-layer.is-on .cfg-layer__price { color: var(--accent); }
+
+.cfg__total { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); display: grid; gap: 12px; }
+.cfg__total-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.cfg__total-row--sub { align-items: center; }
+.cfg__total-label { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-3); }
+.cfg__total-sum { font-size: 30px; font-weight: 680; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.cfg__actions { display: grid; gap: 8px; }
+
+.cfg-preview { position: relative; height: min(72vh, 640px); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.cfg-preview__photo { position: absolute; inset: 0; }
+.cfg-preview__photo .hero-photo__frame { object-position: 50% 30%; }
+
+@media (max-width: 1080px) {
+  .cfg { grid-template-columns: 1fr; }
+  .cfg__panel { position: static; }
+  .cfg__layers { max-height: none; }
+  .cfg__stage { min-height: 380px; aspect-ratio: 3 / 4; }
+  .cfg__current { left: 14px; bottom: 70px; max-width: 70%; }
+  .cfg__current b { font-size: 17px; }
+  .cfg__tools { left: 14px; bottom: 14px; gap: 6px; }
+  .cfg__tool { padding: 8px 11px; font-size: 11.5px; }
+  .cfg-preview { height: 56vh; }
+}
+
+/* приглашение на страницу 3D-подбора */
+.cfg-invite {
+  display: grid; grid-template-columns: 1.4fr auto; gap: 22px; align-items: center;
+  margin-top: 22px; padding: 22px 24px;
+  border: 1px solid rgba(255,106,26,.35); border-radius: var(--radius);
+  background: linear-gradient(120deg, rgba(255,106,26,.09), rgba(255,106,26,0));
+}
+.cfg-invite__text { display: grid; gap: 8px; }
+.cfg-invite__text h3 { font-size: 19px; }
+.cfg-invite__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+@media (max-width: 820px) {
+  .cfg-invite { grid-template-columns: 1fr; padding: 18px; }
+}

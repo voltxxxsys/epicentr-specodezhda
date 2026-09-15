@@ -369,6 +369,7 @@ export async function boot(page) {
   if (page === 'catalog') await import('./pages/catalog.js').then((m) => m.init());
   if (page === 'product') await import('./pages/product.js').then((m) => m.init());
   if (page === 'contacts') await import('./pages/contacts.js').then((m) => m.init());
+  if (page === 'configurator') await import('./pages/configurator.js').then((m) => m.init());
 
   // повторно подхватываем элементы, отрисованные динамически
   initReveal();

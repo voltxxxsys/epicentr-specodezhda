@@ -177,6 +177,19 @@
     </article>
 
   </div>
+
+      <div class="cfg-invite">
+        <div class="cfg-invite__text">
+          <span class="eyebrow">Услуга · бесплатно</span>
+          <h3>3D-подбор на отдельной странице</h3>
+          <p class="small muted">Соберите комплект по слоям: фигура собирается в 3D, стоимость и наличие
+            считаются сразу по действующему каталогу. На выходе — спецификация с артикулами и размерами.</p>
+        </div>
+        <div class="cfg-invite__actions">
+          <a class="btn" href="configurator.html">Собрать комплект в 3D</a>
+          <a class="btn btn--ghost" href="catalog.html">Смотреть каталог</a>
+        </div>
+      </div>
 </section>
 
 <!-- ============================ КАК МЫ РАБОТАЕМ ============================ -->
@@ -256,43 +269,13 @@
 </section>
 
 
-<section class="section" id="proto-3d" style="border-top:1px solid var(--line)">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-head__text">
-        <span class="eyebrow">Прототип</span>
-        <h2>3D-подбор комплекта</h2>
-        <p class="lead">Интерактивный прототип сервиса: комплект собирается слоями на фигуре, стоимость
-          считается сразу по ценам каталога. Покрутите или переключите режим показа — манекен вращается
-          при прокрутке и «надевает» девять слоёв экипировки.</p>
-      </div>
-      <a class="link-arrow" href="catalog.html">Все позиции каталога →</a>
-    </div>
-    <div class="proto3d" id="proto3d" data-mode="spin">
-      <canvas id="proto-canvas" class="proto3d__canvas"></canvas>
-      <div class="proto3d__ui">
-        <div class="proto3d__stage">
-          <b id="proto-title">Базовый слой</b>
-          <span id="proto-caption" class="muted small">Трикотаж с нанесением логотипа компании</span>
-        </div>
-        <div class="proto3d__modes">
-          <button class="chip is-active" type="button" data-proto-mode="spin">Турн</button>
-          <button class="chip" type="button" data-proto-mode="vertical">Вертикаль</button>
-        </div>
-        <div class="proto3d__hint">Прокрутите страницу — фигура повернётся</div>
-      </div>
-    </div>
-    <p class="small muted" style="margin-top:14px">Это демонстрационный прототип: 3D-модели одежды
-      в нём упрощённые, полноценный подбор — на техническом этапе.</p>
-  </div>
-</section>
+
 
 <div id="site-footer"></div>
 
 <script type="module">
   import { boot } from './js/main.js';
   boot('home');
-  import('./js/pages/proto3d.js').then((m) => m.init());
 </script>
 </body>
 </html>

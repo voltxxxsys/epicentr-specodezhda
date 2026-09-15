@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D-подбор комплекта спецодежды — Эпицентр (демо)</title>
+<meta name="description" content="Интерактивный 3D-подбор комплекта: соберите экипировку по слоям, увидьте итоговую стоимость и получите спецификацию с артикулами и ценами каталога.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<div class="page-head">
+  <div class="container">
+    <nav class="breadcrumbs">
+      <a href="index.html">Главная</a><span>/</span><a href="services.html">Услуги</a><span>/</span>
+      <b style="font-weight:520;color:var(--text-2)">3D-подбор комплекта</b>
+    </nav>
+    <h1>Соберите комплект и получите цену</h1>
+    <p class="lead">Отмечайте слои экипировки — фигура собирается в 3D, стоимость и наличие считаются сразу
+      по действующему каталогу. Готовый комплект отправим спецификацией с артикулами, размерами и сроками.</p>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container cfg">
+
+    <!-- ================= 3D-сцена ================= -->
+    <div class="cfg__stage" id="cfg-stage">
+      <canvas class="cfg__canvas" id="cfg-canvas"></canvas>
+
+      <div class="cfg__overlay">
+        <div class="cfg__badge" id="cfg-badge">Прототип · демо-данные</div>
+        <div class="cfg__current">
+          <b id="cfg-title">Комплект целиком</b>
+          <span class="muted small" id="cfg-sub">9 слоёв экипировки на фигуре</span>
+        </div>
+        <div class="cfg__tools">
+          <button class="cfg__tool" type="button" data-cfg-view="spin" title="Вращение фигуры">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20.5 4.2v4h-4"/></svg>
+            Турн
+          </button>
+          <button class="cfg__tool" type="button" data-cfg-view="vertical" title="Фронтальный вид">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 4v16M8 8h8M8 16h8"/></svg>
+            Фронт
+          </button>
+          <button class="cfg__tool" type="button" data-cfg-view="reset" title="Сбросить ракурс">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+            Ракурс
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= панель сборки ================= -->
+    <aside class="cfg__panel">
+      <h2 class="cfg__panel-title">Слои комплекта</h2>
+      <div class="cfg__layers" id="cfg-layers"></div>
+
+      <div class="cfg__total">
+        <div class="cfg__total-row">
+          <span class="cfg__total-label">Итого за комплект</span>
+          <b class="cfg__total-sum" id="cfg-sum">0 ₽</b>
+        </div>
+        <div class="cfg__total-row cfg__total-row--sub">
+          <span class="small muted">отмечено слоёв: <b id="cfg-count">0</b> из 9</span>
+          <span class="small muted">НДС включён</span>
+        </div>
+        <div class="cfg__actions">
+          <button class="btn btn--block" type="button" id="cfg-spec">Получить спецификацию</button>
+          <button class="btn btn--ghost btn--block" type="button" id="cfg-all">Включить все слои</button>
+        </div>
+        <p class="small muted">Скидка юридическим лицам при заказе через сайт. Комплект можно изменить —
+          подставим размеры и аналоги по наличию.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tight" style="border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Как это выглядит вживую</span>
+        <h2>Фотопревью комплекта</h2>
+        <p class="lead">Слева — собранный комплект на реальном манекене: то же, что вы видите в 3D,
+          но снятое в студии. Прокрутите — слои добавляются.</p>
+      </div>
+      <a class="link-arrow" href="catalog.html?cat=spetsodezhda-zimnyaya">Зимняя спецодежда →</a>
+    </div>
+    <div class="cfg-preview" id="cfg-preview"></div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <div class="cta-band__media"><img src="assets/gen/warehouse.jpg" alt=""></div>
+      <div>
+        <span class="eyebrow">Спецификация</span>
+        <h2 style="margin:14px 0">Соберём комплект под ваш риск-профиль</h2>
+        <p class="lead">Пришлите список профессий или опишите производство — подберём размеры, посчитаем
+          стоимость на объём и подготовим счёт. Работаем с юридическими лицами по безналичному расчёту.</p>
+      </div>
+      <form class="lead-form" onsubmit="event.preventDefault(); window.EP && window.EP.toast('Заявка отправлена — демо-режим'); this.reset();">
+        <input type="text" placeholder="Компания" required>
+        <input type="text" placeholder="Контактное лицо" required>
+        <input type="tel" placeholder="Телефон" required>
+        <button class="btn btn--block" type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script type="module">
+  import { boot } from './js/main.js';
+  boot('configurator');
+</script>
+</body>
+</html>

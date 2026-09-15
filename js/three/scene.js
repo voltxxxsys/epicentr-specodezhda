@@ -210,6 +210,9 @@ const LIQUID_FRAG = /* glsl */`
 /* ================================================================== СЦЕНА */
 export async function createHero(canvas, opts = {}) {
   let mode = opts.mode === 'vertical' ? 'vertical' : 'spin';
+  const zoomRef = { v: Number(opts.zoom || 1) }; // >1 — камера ближе
+  const autoSpin = Number(opts.autoSpin || 0);   // рад/с, 0 — выключено
+  const lookY = opts.lookY != null ? Number(opts.lookY) : null;
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
   renderer.setClearColor(0x05060a, 1);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -378,16 +381,20 @@ export async function createHero(canvas, opts = {}) {
       const halfH = fit > 1.4 ? 1.2 : 1.025;
       const halfW = halfH * (w / h);
       ortho.left = -halfW; ortho.right = halfW; ortho.top = halfH; ortho.bottom = -halfH;
-      ortho.position.set(0, 0.95, 4);
-      ortho.lookAt(0, 0.95, 0);
+      const oy = lookY != null ? lookY : 0.95;
+      ortho.position.set(0, oy, 4);
+      ortho.lookAt(0, oy, 0);
+      ortho.zoom = zoomRef.v;
+      ortho.updateProjectionMatrix();
       ortho.updateProjectionMatrix();
       activeCam = ortho;
     } else {
       figure.scale.setScalar(portraitLayout ? 0.86 : 0.94);
       figure.position.set(portraitLayout ? 0 : STAGE_X, 0, 0);
-      view.lookX = portraitLayout ? 0 : 0.44;
-      view.lookY = 0.98;
-      view.z = portraitLayout ? 4.5 : 5.35;
+      // в конфигураторе (без текста слева) фигура стоит по центру
+      view.lookX = portraitLayout ? 0 : (opts.center ? 0 : 0.44);
+      view.lookY = lookY != null ? lookY : 0.98;
+      view.z = (portraitLayout ? 4.5 : 5.35) / zoomRef.v;
       camera.position.z = view.z;
       camera.position.x = 0;
       camera.position.y = 1.3;
@@ -428,6 +435,10 @@ export async function createHero(canvas, opts = {}) {
     },
     get progress() { return state.progress; },
     get camera() { return activeCam; },
+    /** добавить поворот вручную (перетаскивание мышью) */
+    nudge(rad) { state.target = clamp(state.target + rad / (Math.PI * 1.15)); },
+    /** множитель зума */
+    setZoom(z) { zoomRef.v = clamp(z, 0.6, 2.2); resize(); },
     setProgress(p) { state.target = clamp(p); },
     snap(p) { state.progress = state.target = clamp(p); },
     showOnly(key) {
@@ -478,7 +489,7 @@ export async function createHero(canvas, opts = {}) {
     // поворот фигуры: в «Турне» крутим по скроллу, в «Вертикали» фигура строго
     // лицом к зрителю — иначе плоские фото-карточки встают ребром
     if (mode === 'spin') {
-      state.rotationTarget = -0.4 + state.progress * Math.PI * 1.15;
+      state.rotationTarget = -0.4 + state.progress * Math.PI * 1.15 + state.time * autoSpin;
       state.rotation = damp(state.rotation, state.rotationTarget, 6.5, dt);
       turntable.rotation.y = state.rotation + Math.sin(state.time * 0.25) * 0.03;
       // компенсируем орбиту: иначе при повороте фигура «уезжает» в сторону
