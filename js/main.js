@@ -107,7 +107,8 @@ async function initHero() {
   }
 
   if (photoHost) photoHost.innerHTML = photoMod.photoFramesMarkup();
-  loading?.classList.add('is-hidden'); // кадры грузятся сразу, оверлей не нужен
+  // в фото-режиме 3D не грузится — оверлей загрузки вообще не показываем
+  if (loading) loading.style.display = 'none';
 
   if (stepsEl) stepsEl.innerHTML = stages.map((k, i) => `
     <button class="hero-step" type="button" data-step="${i}">
