@@ -773,3 +773,197 @@ p { margin: 0; }
 .hero-stage__line { display: flex; align-items: baseline; justify-content: center; gap: 10px; flex-wrap: nowrap; }
 .hero-stage__line #stage-price { white-space: nowrap; color: var(--accent); font-family: var(--mono); font-size: 12.5px; }
 .hero-kit__card-name { -webkit-line-clamp: 1; }
+
+/* ==========================================================================
+   МОБИЛЬНАЯ ВЁРСТКА (телефоны ≤ 700 px)
+   ========================================================================== */
+
+/* никакого горизонтального скролла */
+html, body { max-width: 100%; overflow-x: clip; }
+
+/* бегущая строка — декорация, ограничиваем ширину */
+.marquee { max-width: 100vw; }
+.marquee__track { animation-duration: 26s; }
+.marquee__track span { font-size: 11px; letter-spacing: .16em; }
+
+/* ---------- выдвижное меню ---------- */
+.drawer {
+  position: fixed; inset: 0; z-index: 200; display: none;
+  background: rgba(4, 5, 7, .72); backdrop-filter: blur(6px);
+}
+.drawer.is-open { display: block; }
+.drawer__panel {
+  position: absolute; top: 0; right: 0; bottom: 0; width: min(88vw, 380px);
+  padding: 18px 20px 28px; overflow-y: auto;
+  background: #0b0d11; border-left: 1px solid var(--line);
+  display: grid; align-content: start; gap: 18px;
+  animation: drawerIn .28s cubic-bezier(.22, 1, .36, 1);
+}
+@keyframes drawerIn { from { transform: translateX(16px); opacity: .4; } to { transform: none; opacity: 1; } }
+.drawer__head { display: flex; align-items: center; justify-content: space-between; }
+.drawer__head .logo__title { font-size: 17px; letter-spacing: .06em; }
+.drawer__search {
+  display: flex; align-items: center; gap: 10px; height: 46px; padding: 0 14px;
+  border: 1px solid var(--line-2); border-radius: 999px; background: rgba(255,255,255,.03);
+}
+.drawer__search svg { width: 17px; height: 17px; stroke: var(--text-3); }
+.drawer__search input { flex: 1; min-width: 0; background: none; border: 0; outline: none; color: var(--text); font-size: 15px; }
+.drawer__nav { display: grid; }
+.drawer__nav a {
+  padding: 14px 2px; font-size: 16.5px; font-weight: 560; color: var(--text);
+  border-bottom: 1px solid var(--line);
+}
+.drawer__nav a:active { color: var(--accent); }
+.drawer__contacts { display: grid; gap: 6px; font-size: 14px; }
+
+@media (max-width: 700px) {
+  /* ---------- шапка: компактная строка ---------- */
+  .topbar { display: none; }
+  .header__in { height: 64px; gap: 10px; }
+  .logo__mark { width: 36px; height: 36px; border-radius: 10px; }
+  .logo__sub { display: none; }
+  .logo__title { font-size: 15px; }
+  .header__actions { gap: 6px; }
+  .header__actions .btn--sm { display: none; }       /* «Заказать звонок» — в меню */
+  .header__actions .icon-btn:first-of-type { display: none; } /* избранное — в меню */
+  .icon-btn { width: 40px; height: 40px; }
+  .icon-btn__badge { min-width: 16px; height: 16px; font-size: 9.5px; }
+  .burger { display: grid !important; }
+  .search-inline { display: none; }
+
+  /* ---------- общие правила ---------- */
+  .container { padding: 0 16px; }
+  .section { padding: 44px 0; }
+  .section--tight { padding: 34px 0; }
+  .section-head { margin-bottom: 22px; gap: 14px; }
+  h2 { font-size: clamp(22px, 6.4vw, 30px); }
+  .lead { font-size: 14.5px; }
+  .btn { padding: 14px 20px; font-size: 14px; min-height: 46px; }
+  .btn--sm { min-height: 40px; }
+  .link-arrow { min-height: 40px; align-items: center; }
+  .chip { min-height: 38px; padding: 9px 14px; }
+  .eyebrow { font-size: 10.5px; letter-spacing: .2em; }
+
+  /* ---------- сетки в одну колонку ---------- */
+  .cat-grid, .showcase-grid, .product-grid, .product-grid--5,
+  .team-grid, .post-grid, .features-grid, .stats-grid,
+  .delivery-grid, .return-grid, .partner-grid, .req-grid { grid-template-columns: 1fr !important; }
+
+  /* ---------- каталог ---------- */
+  .catalog-layout { grid-template-columns: 1fr; gap: 16px; }
+  .filters { padding: 16px; border-radius: 16px; max-height: none; }
+  .filters h4 { margin-bottom: 8px; }
+  .filter-list a { padding: 11px 10px; font-size: 14.5px; min-height: 44px; align-items: center; }
+  #catalog-grid.grid.product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px; }
+  .product-card__body { padding: 12px 12px 14px; gap: 7px; }
+  .product-card__name { font-size: 13px; min-height: 2.6em; }
+  .product-card__price { font-size: 15px; }
+  .product-card__art { font-size: 10px; }
+  .product-card__foot { flex-direction: column; align-items: stretch; gap: 8px; }
+  .product-card__foot .btn { width: 100%; }
+  .catalog-toolbar { gap: 10px; }
+  .catalog-toolbar .muted { width: 100%; margin: 0; }
+  .select-pill { flex: 1; min-height: 44px; }
+
+  /* ---------- карточка товара ---------- */
+  .product-page { grid-template-columns: 1fr; gap: 20px; }
+  .product-gallery__thumbs img { width: 64px; height: 64px; }
+  .product-info__price { font-size: 26px; }
+  .product-actions { gap: 8px; }
+  .product-actions .btn { flex: 1 1 100%; }
+  .qty { flex: 1 1 100%; justify-content: space-between; }
+  .qty button { width: 52px; height: 46px; font-size: 20px; }
+  .specs td { padding: 10px 2px; font-size: 13.5px; }
+  .specs td:first-child { width: 45%; }
+  .tabs { gap: 2px; overflow-x: auto; padding-bottom: 2px; }
+  .tab { padding: 12px 14px; white-space: nowrap; font-size: 13.5px; }
+
+  /* ---------- услуги и контакты ---------- */
+  .service-row { grid-template-columns: 1fr; gap: 16px; padding: 24px 0; }
+  .service-row__media img { aspect-ratio: 4 / 3; }
+  .contacts-grid { grid-template-columns: 1fr; }
+  .contact-card { padding: 18px; }
+  .map-frame { min-height: 280px; }
+  .faq__q { padding: 15px 16px; font-size: 14.5px; }
+  .faq__a p { padding: 0 16px 16px; font-size: 13.5px; }
+  .lead-form input, .lead-form textarea { padding: 13px 15px; font-size: 15px; }
+
+  /* ---------- конфигуратор ---------- */
+  .cfg { grid-template-columns: 1fr; gap: 16px; }
+  .cfg__stage { aspect-ratio: 3 / 4; min-height: 420px; }
+  .cfg__current b { font-size: 17px; }
+  .cfg-layer { grid-template-columns: 18px 40px 1fr auto; padding: 10px; }
+  .cfg-layer__price { font-size: 12.5px; }
+  .cfg__total-sum { font-size: 26px; }
+  .cfg-preview { height: 52vh; }
+
+  /* ---------- футер ---------- */
+  .footer { padding: 40px 0 26px; }
+  .footer__grid { grid-template-columns: 1fr; gap: 26px; }
+  .footer ul { gap: 6px; }
+  .footer a { font-size: 14.5px; padding: 6px 0; display: inline-block; }
+  .footer__bottom { gap: 10px; font-size: 12px; margin-top: 30px; }
+  .subscribe input { min-height: 46px; }
+
+  /* ---------- прочее ---------- */
+  .review { padding: 20px; }
+  .cta-band { padding: 24px 18px; }
+  .table-scroll, .specs { display: block; overflow-x: auto; }
+  .article { font-size: 15px; }
+  .timeline { padding-left: 22px; }
+  .stats-grid .stat { padding: 18px; }
+}
+
+/* очень узкие экраны */
+@media (max-width: 360px) {
+  #catalog-grid.grid.product-grid { grid-template-columns: 1fr !important; }
+  .logo__title { font-size: 14px; }
+}
+
+/* мелкий текст на телефоне: минимальный читаемый кегль */
+@media (max-width: 700px) {
+  .header__phone span, .logo__sub { font-size: 11.5px; }
+  .eyebrow, .hero-kit__count, .hero-kit__label, .showcase-card__tag,
+  .post-card__cat, .cat-card__count, .stat__label, .footer h4,
+  .timeline__year, .product-card__art, .filter-list a span,
+  .review__date, .team-card__role, .subscribe input,
+  .cfg__panel-title, .cfg__total-label, .cfg__badge { font-size: 11.5px !important; }
+  .product-card__art { letter-spacing: 0; }
+  .small, .muted.small, .footer__bottom, .breadcrumbs, .post-card__meta,
+  .catalog-toolbar .muted, .product-info__meta, .contact-row, .faq__a p,
+  .service-list li, .article p, .article ul, .note-line, .note-row { font-size: 13.5px; }
+  .hero-stage__sub, .hero-stage__price { font-size: 12.5px; }
+  .hero-hint { display: none; }        /* подсказка «скролл» на телефоне лишняя */
+  .stock, .stock--low { font-size: 12px; }
+  .drawer__nav a { font-size: 17px; }
+  .drawer__contacts { font-size: 14.5px; }
+  /* кнопки и поля — крупнее по высоте */
+  .field, input, select, textarea { min-height: 46px; }
+  select.select-pill { min-height: 46px; }
+}
+
+/* фильтры каталога: на ПК как есть, на телефоне — сворачиваемый блок */
+.m-filters { border: 0; }
+.m-filters > summary { display: none; }
+.m-filters__body { display: contents; }
+@media (max-width: 700px) {
+  .filters { padding: 12px 14px; }
+  .m-filters > summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 12px 2px; cursor: pointer; list-style: none;
+    font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-2); font-weight: 600;
+  }
+  .m-filters > summary::-webkit-details-marker { display: none; }
+  .m-filters__chev {
+    width: 9px; height: 9px; border-right: 1.6px solid var(--text-3); border-bottom: 1.6px solid var(--text-3);
+    transform: rotate(45deg); transition: transform .25s var(--ease);
+  }
+  .m-filters[open] .m-filters__chev { transform: rotate(225deg); }
+  .m-filters__body { display: grid; gap: 18px; padding-top: 6px; }
+}
+
+/* гарантия: закрытый блок фильтров не показывает содержимое */
+@media (max-width: 700px) {
+  .m-filters:not([open]) .m-filters__body { display: none; }
+  .m-filters[open] .m-filters__body { display: grid; }
+}

@@ -308,15 +308,31 @@ function initHeader() {
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
-  // мобильное меню
-  const burger = $('.burger');
-  if (burger) {
-    burger.addEventListener('click', () => {
-      const nav = $('.nav');
-      nav?.classList.toggle('is-open');
-      document.body.classList.toggle('is-locked');
-    });
-  }
+  // мобильное меню (drawer)
+  const drawer = $('#m-drawer');
+  const openDrawer = () => {
+    if (!drawer) return;
+    drawer.classList.add('is-open');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('is-locked');
+  };
+  const closeDrawer = () => {
+    if (!drawer) return;
+    drawer.classList.remove('is-open');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('is-locked');
+  };
+  $('.burger')?.addEventListener('click', openDrawer);
+  $('#drawer-close')?.addEventListener('click', closeDrawer);
+  drawer?.addEventListener('click', (e) => { if (e.target === drawer) closeDrawer(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+  // поиск из меню перебрасывает в каталог
+  drawer?.querySelector('input[type="search"]')?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const q = e.target.value.trim();
+      if (q) location.href = 'catalog.html?q=' + encodeURIComponent(q);
+    }
+  });
   // активный пункт меню
   const page = location.pathname.split('/').pop() || 'index.html';
   $$('.nav a').forEach((a) => {
@@ -373,6 +389,13 @@ export async function boot(page) {
 
   // повторно подхватываем элементы, отрисованные динамически
   initReveal();
+
+  // фильтры каталога: на широком экране раскрыты, на телефоне свёрнуты
+  const filtersBox = document.getElementById('m-filters');
+  if (filtersBox) {
+    if (window.innerWidth > 700) filtersBox.setAttribute('open', '');
+    else filtersBox.removeAttribute('open');
+  }
 }
 
 window.EP = { money, productCard, loadCatalog, toast };
