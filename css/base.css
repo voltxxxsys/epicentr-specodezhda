@@ -729,7 +729,11 @@ p { margin: 0; }
 .hero-photo::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(5,6,9,.96) 0%, rgba(5,6,9,.78) 14%, rgba(5,6,9,.34) 30%, rgba(5,6,9,.04) 48%, transparent 62%),
+    linear-gradient(90deg,
+      rgba(5,6,9,.97) 0%, rgba(5,6,9,.94) 12%, rgba(5,6,9,.86) 22%,
+      rgba(5,6,9,.72) 32%, rgba(5,6,9,.56) 42%, rgba(5,6,9,.4) 52%,
+      rgba(5,6,9,.24) 62%, rgba(5,6,9,.12) 72%, rgba(5,6,9,.04) 82%, transparent 92%),
+    linear-gradient(90deg, rgba(226,229,233,0) 34%, rgba(226,229,233,.05) 48%, rgba(226,229,233,.02) 62%, rgba(226,229,233,0) 74%),
     linear-gradient(180deg, rgba(5,6,9,.9) 0%, transparent 22%, transparent 72%, rgba(5,6,9,.96) 100%);
 }
 @media (max-width: 860px) {
@@ -970,8 +974,13 @@ html, body { max-width: 100%; overflow-x: clip; }
 @media (max-width: 700px) {
   .hero3d[data-mode="photo"] .hero-photo {
     left: 0;                      /* кадр на всю ширину — фигура крупнее */
-    -webkit-mask-image: none;
-    mask-image: none;
+    /* растворение кадра вместо жёсткой границы */
+    -webkit-mask-image: linear-gradient(94deg,
+      rgba(0,0,0,0) 0%, rgba(0,0,0,.14) 14%, rgba(0,0,0,.34) 26%,
+      rgba(0,0,0,.58) 38%, rgba(0,0,0,.82) 50%, rgba(0,0,0,.95) 62%, #000 72%);
+    mask-image: linear-gradient(94deg,
+      rgba(0,0,0,0) 0%, rgba(0,0,0,.14) 14%, rgba(0,0,0,.34) 26%,
+      rgba(0,0,0,.58) 38%, rgba(0,0,0,.82) 50%, rgba(0,0,0,.95) 62%, #000 72%);
     /* своя подложка: светлая, в тон студийным кадрам (без чёрных полос) */
     background: radial-gradient(70% 55% at 50% 50%, #eceef1 0%, #dde0e5 52%, #c9cdd3 100%);
     background:
@@ -986,10 +995,17 @@ html, body { max-width: 100%; overflow-x: clip; }
   /* затемнение только под текст и низ, середина кадра остаётся светлой */
   .hero3d[data-mode="photo"] .hero-photo::after {
     background:
-      linear-gradient(104deg, rgba(5,6,9,.96) 0%, rgba(5,6,9,.86) 30%, rgba(5,6,9,.42) 48%,
-                      rgba(5,6,9,.04) 64%, rgba(5,6,9,0) 78%),
-      linear-gradient(180deg, rgba(5,6,9,.72) 0%, rgba(5,6,9,0) 20%,
-                      rgba(5,6,9,0) 74%, rgba(5,6,9,.9) 100%);
+      /* мягкий отсвет от кадра в тёмную зону */
+      linear-gradient(96deg, rgba(226,229,233,0) 30%, rgba(226,229,233,.045) 46%,
+                      rgba(226,229,233,.085) 56%, rgba(226,229,233,.03) 68%, rgba(226,229,233,0) 80%),
+      /* основной переход: длинный, с равномерными ступенями */
+      linear-gradient(98deg,
+        rgba(5,6,9,.97) 0%, rgba(5,6,9,.95) 16%, rgba(5,6,9,.9) 26%,
+        rgba(5,6,9,.8) 34%, rgba(5,6,9,.68) 42%, rgba(5,6,9,.55) 50%,
+        rgba(5,6,9,.4) 58%, rgba(5,6,9,.26) 66%, rgba(5,6,9,.14) 74%,
+        rgba(5,6,9,.05) 82%, rgba(5,6,9,0) 90%),
+      linear-gradient(180deg, rgba(5,6,9,.68) 0%, rgba(5,6,9,0) 22%,
+                      rgba(5,6,9,0) 76%, rgba(5,6,9,.88) 100%);
   }
   /* мягкая световая окантовка вокруг фигуры, чтобы силуэт читался */
   .hero3d[data-mode="photo"] .hero3d__vignette {
