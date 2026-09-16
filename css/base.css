@@ -743,7 +743,6 @@ p { margin: 0; }
 /* фото-герой на телефоне: текст сверху, фигура ниже */
 @media (max-width: 860px) {
   .hero3d[data-mode="photo"] { height: 300vh; }
-  .hero3d[data-mode="photo"] .hero-photo__frame { object-position: 50% 62%; }
   .hero3d[data-mode="photo"] .hero-copy {
     position: absolute; top: 0; left: 0; right: 0; bottom: auto;
     padding: 26px var(--gutter) 30px;
@@ -973,13 +972,16 @@ html, body { max-width: 100%; overflow-x: clip; }
     left: 0;                      /* кадр на всю ширину — фигура крупнее */
     -webkit-mask-image: none;
     mask-image: none;
+    /* своя подложка: светлая, в тон студийным кадрам (без чёрных полос) */
+    background: radial-gradient(70% 55% at 50% 50%, #eceef1 0%, #dde0e5 52%, #c9cdd3 100%);
     background:
       radial-gradient(72% 52% at 50% 52%, rgba(168, 178, 194, .34) 0%, rgba(24, 27, 33, 0) 74%),
       radial-gradient(120% 90% at 50% 46%, #20242b 0%, #0d0f13 66%, #08090c 100%);
   }
   .hero3d[data-mode="photo"] .hero-photo__frame {
-    filter: brightness(1.14) contrast(1.07) saturate(1.05);
-    object-position: 50% 58%;
+    object-fit: cover;            /* заполняем экран целиком, без полос */
+    object-position: 50% 54%;
+    filter: brightness(1.12) contrast(1.06) saturate(1.04);
   }
   /* затемнение только под текст и низ, середина кадра остаётся светлой */
   .hero3d[data-mode="photo"] .hero-photo::after {

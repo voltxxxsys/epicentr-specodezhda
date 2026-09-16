@@ -35,6 +35,15 @@
 | `open-sea-skin` | строки 23 (`false`), 25 (`true`), 42 (`true`) | **disabled: true** |
 | `ui-theme-cyberpunk` | строки 31 (`true`), 45 (`true`) | **disabled: true** |
 
+Эффективное состояние всех 10 затронутых id (проверено валидатором
+`_dsh_check_yaml.mjs` — js-yaml + повтор семантики загрузчика):
+
+* выключены (9): `ui-skins`, `dsh-voice`, `open-sea-skin`, `ui-theme-cyberpunk`,
+  `vision-toolkit`, `dsh-tts`, `talk-map`, `deepseek-balance-widget`, `dsh-whale-widget`
+* **включён (1): `dsh-messenger-gateway`** (`disabled: false` + config).
+  Его `disabled: true` (строки 37–39 в первой редакции файла) был удалён правкой в GUI,
+  поэтому сейчас он фактически включён. Это важно: «последний побеждает» здесь даёт `false`.
+
 ## 2. Семантика загрузчика — дубли НЕ вызывают падения
 
 Код: `@deepseek-ai/dsh-app-boot\lib\index.js`
